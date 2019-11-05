@@ -17,7 +17,8 @@ defaults:
       layout: "default"
 
 collections:
-  - items
+  items:
+    output: true
 
 sass:
   style: compressed
