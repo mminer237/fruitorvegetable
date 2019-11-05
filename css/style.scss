@@ -37,8 +37,9 @@ main {
 	flex-grow: 1;
 }
 section {
-	max-width: 700px;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+	max-width: 700px;
+	margin: auto;
 }
 footer {
 	background-color: $primary-color;
