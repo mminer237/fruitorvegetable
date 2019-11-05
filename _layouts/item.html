@@ -7,7 +7,7 @@ layout: default
 		<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 	</div>
 	{% if page.image %}
-	<img src="{{ page.image }}" alt="Picture of a {{ page.title }}">
+	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
 	{{ page.content }}
 </article>
