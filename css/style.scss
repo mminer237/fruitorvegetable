@@ -61,9 +61,13 @@ section, article, details {
 	margin: 15px auto;
 	padding: 10px;
 }
+h2 {
+	margin: 0 0 15px 0;
+}
 h2, summary {
 	color: $secondary-color;
-	margin: 0 0 15px 0;
+	font-size: 24px;
+	font-weight: bold;
 }
 a {
 	color: $secondary-color;
