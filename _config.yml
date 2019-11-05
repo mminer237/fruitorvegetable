@@ -25,6 +25,7 @@ defaults:
 collections:
   items:
     output: true
+    permalink: /:path
 
 sass:
   style: compressed
