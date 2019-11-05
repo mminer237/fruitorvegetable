@@ -68,6 +68,9 @@ h2, summary {
 a {
 	color: $secondary-color;
 }
+li:not(:last-child) {
+	margin-bottom: 8px;
+}
 footer {
 	background-color: $primary-color;
 	color: white;
