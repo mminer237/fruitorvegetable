@@ -1,13 +1,43 @@
 ---
 ---
+$primary-color: #dc4d66;
+$darkish-secondary-color: #39580a;
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	margin: 0;
+	min-height: 100vh;
+}
 header {
 	/* Gradient version */
-	background: linear-gradient(90deg,
-		hsl(354, 80%, 50%) 20%,
-		hsl(25, 80%, 45%) 35%,
-		hsl(56, 80%, 39%) 50%,
-		hsl(87, 80%, 35%) 65%,
-		hsl(118, 79%, 28%) 80%);
+	// background: linear-gradient(90deg,
+	// 	hsl(354, 80%, 50%) 20%,
+	// 	hsl(25, 80%, 45%) 35%,
+	// 	hsl(56, 80%, 39%) 50%,
+	// 	hsl(87, 80%, 35%) 65%,
+	// 	hsl(118, 79%, 28%) 80%);
 
 	/* Split version */ // Should I use this instead?
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVQImWO445v23zKC6z8AE2IEKbO7jUwAAAAASUVORK5CYII=) center/cover;
+	image-rendering: crisp-edges;
+	
+	color: white;
+	font-size: 60px;
+	padding: 10px;
+}
+header img {
+	// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
+	filter: drop-shadow(1px 1px 3px #000000c0);
+}
+header, footer {
+	text-align: center;
+}
+section {
+	max-width: 700px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+footer {
+	background-color: $primary-color;
+	padding: 20px;
 }
