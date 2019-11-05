@@ -18,7 +18,7 @@
 		{% feed_meta %}
 		<link rel="icon" href="/favicon.ico">
 		<meta charset="UTF-8">
-		<title>{% if page.url == "/" %}{{ site.title | xml_escape }} – {{ site.tagline | xml_escape }}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
+		<title>{% if page.url == "/" %}{{ site.title | xml_escape }}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
 		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | xml_escape }}{% endif %}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/css/style.css">
