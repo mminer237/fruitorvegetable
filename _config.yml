@@ -21,9 +21,18 @@ defaults:
       type: "items"
     values:
       layout: "item"
+  -
+    scope:
+      path: ""
+      type: "types"
+    values:
+      layout: "type"
 
 collections:
   items:
+    output: true
+    permalink: /:path
+  types:
     output: true
     permalink: /:path
 

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section>
+	<div>
+		<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	</div>
+	{% if page.image %}
+	<img src="{{ page.image }}" alt="{{ page.title }}">
+	{% endif %}
+	{{ page.content }}
+</section>
+<details>
+	<summary>List of {{ page.title }}</summary>
+	<ul>
+		{% for item in site.items %}
+			{% if item[page.type] %}
+				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</details>
