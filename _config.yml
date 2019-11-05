@@ -15,6 +15,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "items"
+    values:
+      layout: "item"
 
 collections:
   items:
