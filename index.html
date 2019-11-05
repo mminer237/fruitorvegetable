@@ -8,6 +8,14 @@ description: Is this a fruit or a vegetable? The scientific answer explained her
 </section>
 <section>
 	<div>
-		TODO: Search here?
+		<h2>Search for a food item:</h2>
+		<input id="search-box" type="text" list="items">
+		<datalist id="items">
+			{% for page in site.pages %}
+				{% if page.categories contains 'items' %}
+					<option value="{{ page.title }}">
+				{% endif %}
+			{% endfor %}
+		</datalist>
 	</div>
 </section>
