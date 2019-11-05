@@ -9,5 +9,22 @@ layout: default
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
+	<div class="type{% if page.fruit %} fruit {% endif %}{% if page.vegetable %} vegetable {% endif %}">
+		<p>This is...</p>
+		<div class="answer">
+			{% if page.fruit %}
+				{% if page.vegetable %}
+					Both!
+				{% else %}
+					A fruit!
+				{% endif %}
+			{% endif %}
+			{% if page.vegetable %}
+				A vegetable!
+			{% else %}
+				Neither!
+			{% endif %}
+		</div>
+	</div>
 	{{ page.content }}
 </article>
