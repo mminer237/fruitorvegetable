@@ -53,7 +53,7 @@ header, footer {
 main {
 	flex-grow: 1;
 }
-section, article {
+section, article, details {
 	background-color: var(--text-background-color);
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 	color: var(--text-color);
@@ -61,7 +61,8 @@ section, article {
 	margin: 15px auto;
 	padding: 10px;
 }
-h2 {
+h2, summary {
+	color: $secondary-color;
 	margin: 0 0 15px 0;
 }
 a {
