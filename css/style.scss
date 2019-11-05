@@ -2,6 +2,7 @@
 ---
 $primary-color: #dc4d66;
 $darkish-secondary-color: #39580a;
+$lightish-secondary-color: hsl(84, 70%, 69%);
 body {
 	display: flex;
 	flex-direction: column;
@@ -22,9 +23,11 @@ header {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVQImWO445v23zKC6z8AE2IEKbO7jUwAAAAASUVORK5CYII=) center/cover;
 	image-rendering: crisp-edges;
 	
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 	color: white;
 	font-size: 60px;
 	padding: 10px;
+	text-shadow: 1px 2px 3px rgba(0,0,0,.6);
 }
 header img {
 	// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
