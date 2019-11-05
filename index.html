@@ -11,10 +11,8 @@ description: Is this a fruit or a vegetable? The scientific answer explained her
 		<h2>Search for a food item:</h2>
 		<input id="search-box" type="text" list="items">
 		<datalist id="items">
-			{% for page in site.pages %}
-				{% if page.categories contains 'items' %}
-					<option value="{{ page.title }}">
-				{% endif %}
+			{% for item in site.items %}
+				<option value="{{ item.title }}">
 			{% endfor %}
 		</datalist>
 	</div>
