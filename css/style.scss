@@ -3,6 +3,10 @@
 $primary-color: #dc4d66;
 $darkish-secondary-color: #39580a;
 $lightish-secondary-color: hsl(84, 70%, 69%);
+:root {
+	--text-color: black;
+	--text-background-color: white;
+}
 body {
 	background-color: $lightish-secondary-color;
 	display: flex;
@@ -46,7 +50,9 @@ main {
 	flex-grow: 1;
 }
 section, article {
+	background-color: var(--text-background-color);
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+	color: var(--text-color);
 	max-width: 700px;
 	margin: 15px auto;
 	padding: 10px;
@@ -59,5 +65,15 @@ a {
 }
 footer {
 	background-color: $primary-color;
+	color: var(--text-color);
 	padding: 20px;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: #EEE;
+		--text-background-color: #333;
+	}
+	body {
+		background-color: $darkish-secondary-color;
+	}
 }
