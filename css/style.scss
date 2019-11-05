@@ -29,19 +29,21 @@ header {
 	image-rendering: crisp-edges;
 	
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
-	color: white;
-	font-size: 60px;
 	padding: 10px;
-	text-shadow: 2px 3px 6px rgba(0,0,0,.9);
 }
 header img {
 	// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 	filter: drop-shadow(1px 1px 3px #000000c0);
 }
-header span {
+header h1 {
+	color: white;
 	display: inline-block;
 	margin: 20px;
+	text-shadow: 2px 3px 6px rgba(0,0,0,.9);
 	vertical-align: top;
+}
+h1 {
+	font-size: 60px;
 }
 header, footer {
 	text-align: center;
