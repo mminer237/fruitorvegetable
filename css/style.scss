@@ -33,6 +33,11 @@ header img {
 	// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 	filter: drop-shadow(1px 1px 3px #000000c0);
 }
+header span {
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+}
 header, footer {
 	text-align: center;
 }
