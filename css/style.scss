@@ -4,6 +4,7 @@ $primary-color: #dc4d66;
 $darkish-secondary-color: #39580a;
 $lightish-secondary-color: hsl(84, 70%, 69%);
 body {
+	background-color: $lightish-secondary-color;
 	display: flex;
 	flex-direction: column;
 	font-family: sans-serif;
@@ -52,6 +53,9 @@ section {
 }
 h2 {
 	margin: 0 0 15px 0;
+}
+a {
+	color: $lightish-secondary-color;
 }
 footer {
 	background-color: $primary-color;
