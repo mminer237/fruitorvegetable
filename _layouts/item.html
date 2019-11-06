@@ -20,7 +20,7 @@ layout: default
 			<div class="answer">
 				<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
 				{% if parent_botanical_type %}
-				<span class="answer-parent">(A type of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.singular_title | downcase }}</a>)</span>
+				<span class="answer-parent">(A type of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
@@ -31,7 +31,7 @@ layout: default
 			<div class="answer">
 				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
 				{% if parent_culinary_type %}
-				<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.singular_title | downcase }}</a>)</span>
+				<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
