@@ -9,17 +9,19 @@ layout: default
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
-	<div class="type {{ page.botanically }} {{ site.types[page.botanically].parent_type }} {{ page.culinarily }}">
-		{% if page.botanically %}
+	{% assign botanical_type = site.types | where:"type", page.botanically | first %}
+	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
+	<div class="type {{ page.botanically }} {{ botanical_type.parent_type }} {{ page.culinarily }}">
+		{% if botanical_type %}
 		<div>
 			<p>Botanically this is...</p>
-			<div class="answer"><a href="{{ site.types[page.botanically].url }}">{{ site.types[page.botanically].indefinite_title }}!</a></div>
+			<div class="answer"><a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a></div>
 		</div>
 		{% endif %}
-		{% if page.culinarily %}
+		{% if culinary_type %}
 		<div>
 			<p>Culinarily this is...</p>
-			<div class="answer"><a href="{{ site.types[page.culinarily].url }}">{{ site.types[page.culinarily].indefinite_title }}!</a></div>
+			<div class="answer"><a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a></div>
 		</div>
 		{% endif %}
 	</div>
