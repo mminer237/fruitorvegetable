@@ -15,7 +15,7 @@ layout: default
 	<summary>List of {{ page.title }}</summary>
 	<ul>
 		{% for item in site.items %}
-			{% if item[page.type] %}
+			{% if item.botanically == page.slug or item.culinarily  %}
 				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 			{% endif %}
 		{% endfor %}
