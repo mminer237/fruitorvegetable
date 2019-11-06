@@ -15,13 +15,23 @@ layout: default
 		{% if botanical_type %}
 		<div>
 			<p>Botanically this is...</p>
-			<div class="answer"><a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a></div>
+			<div class="answer">
+				<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
+				{% if botanical_type.parent_type %}
+				<span class="answer-parent">(A type of <a href="{{ botanical_type.parent_type.url }}">{{ botanical_type.parent_type.title | downcase }}</a>)</span>
+				{% endif %}
+			</div>
 		</div>
 		{% endif %}
 		{% if culinary_type %}
 		<div>
 			<p>Culinarily this is...</p>
-			<div class="answer"><a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a></div>
+			<div class="answer">
+				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
+				{% if culinary_type.parent_type %}
+				<span class="answer-parent">(A type of <a href="{{ culinary_type.parent_type.url }}">{{ culinary_type.parent_type.title | downcase }}</a>)</span>
+				{% endif %}
+			</div>
 		</div>
 		{% endif %}
 	</div>
