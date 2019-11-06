@@ -9,21 +9,15 @@ layout: default
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
-	<div class="type{% if page.fruit %} fruit {% endif %}{% if page.vegetable %} vegetable {% endif %}">
-		<p>This is...</p>
-		<div class="answer">
-			{% if page.fruit %}
-				{% if page.vegetable %}
-					Both!
-				{% else %}
-					A fruit!
-				{% endif %}
-			{% endif %}
-			{% if page.vegetable %}
-				A vegetable!
-			{% else %}
-				Neither!
-			{% endif %}
+	{% site.types[page.botanically].parent_type %}
+	<div class="type {{ page.botanically }} {{ site.types[page.botanically].parent_type }} {{ page.culinarily }}">
+		<div>
+			<p>Botanically this is...</p>
+			<div class="answer"><a href="{{ site.types[page.botanically].url }}">{{ site.types[page.botanically].indefinite_title }}!</a></div>
+		</div>
+		<div>
+			<p>Culinarily this is...</p>
+			<div class="answer"><a href="{{ site.types[page.culinarily].url }}">{{ site.types[page.culinarily].indefinite_title }}!</a></div>
 		</div>
 	</div>
 	{{ page.content }}
