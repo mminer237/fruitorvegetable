@@ -9,16 +9,19 @@ layout: default
 	{% if page.image %}
 	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
-	{% site.types[page.botanically].parent_type %}
 	<div class="type {{ page.botanically }} {{ site.types[page.botanically].parent_type }} {{ page.culinarily }}">
+		{% if page.botanically %}
 		<div>
 			<p>Botanically this is...</p>
 			<div class="answer"><a href="{{ site.types[page.botanically].url }}">{{ site.types[page.botanically].indefinite_title }}!</a></div>
 		</div>
+		{% endif %}
+		{% if page.culinarily %}
 		<div>
 			<p>Culinarily this is...</p>
 			<div class="answer"><a href="{{ site.types[page.culinarily].url }}">{{ site.types[page.culinarily].indefinite_title }}!</a></div>
 		</div>
+		{% endif %}
 	</div>
 	{{ page.content }}
 </article>
