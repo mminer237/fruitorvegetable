@@ -75,6 +75,26 @@ a {
 li:not(:last-child) {
 	margin-bottom: 8px;
 }
+.type {
+	font-size: 20px;
+	font-weight: bold;
+	.fruit {
+
+	}
+	.berry {
+
+	}
+	.vegetable {
+
+	}
+	
+	.answer {
+		font-size: 28px;
+		.answer-parent {
+			font-size: 16px;
+		}
+	}
+}
 footer {
 	background-color: $primary-color;
 	color: white;
