@@ -10,26 +10,28 @@ layout: default
 	<img src="{{ page.image }}" alt="{{ page.title }}">
 	{% endif %}
 	{% assign botanical_type = site.types | where:"type", page.botanically | first %}
+	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
 	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
+	{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
 	<div class="type">
 		{% if botanical_type %}
 		<div class="{{ page.botanically }} {{ botanical_type.parent_type }}">
 			<p>Botanically this is...</p>
 			<div class="answer">
 				<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
-				{% if botanical_type.parent_type %}
-				<span class="answer-parent">(A type of <a href="{{ botanical_type.parent_type.url }}">{{ botanical_type.parent_type.title | downcase }}</a>)</span>
+				{% if parent_botanical_type %}
+				<span class="answer-parent">(A type of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
 		{% endif %}
 		{% if culinary_type %}
-		<div class="{{ page.culinarily }}">
+		<div class="{{ page.culinarily }} {{ culinary_type.parent_type }}">
 			<p>Culinarily this is...</p>
 			<div class="answer">
 				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
-				{% if culinary_type.parent_type %}
-				<span class="answer-parent">(A type of <a href="{{ culinary_type.parent_type.url }}">{{ culinary_type.parent_type.title | downcase }}</a>)</span>
+				{% if parent_culinary_type %}
+				<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
