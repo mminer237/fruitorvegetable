@@ -81,7 +81,7 @@ li:not(:last-child) {
 	font-weight: bold;
 	margin: 10px;
 	padding: 10px;
-	> div {
+	> div:not(:first-child) {
 		margin-top: 15px;
 	}
 	.fruit {
