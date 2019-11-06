@@ -12,7 +12,7 @@ layout: default
 	{{ page.content }}
 </section>
 <details>
-	<summary>List of {{ page.title }}</summary>
+	<summary>List of {{ page.plural_title }}</summary>
 	<ul>
 		{% for item in site.items %}
 			{% if item.botanically == page.slug or item.culinarily  %}
