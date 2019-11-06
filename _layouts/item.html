@@ -16,7 +16,7 @@ layout: default
 	<div class="type">
 		{% if botanical_type %}
 		<div class="{{ page.botanically }} {{ botanical_type.parent_type }}">
-			<p>Botanically this is...</p>
+			<div>Botanically this is...</div>
 			<div class="answer">
 				<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
 				{% if parent_botanical_type %}
@@ -27,7 +27,7 @@ layout: default
 		{% endif %}
 		{% if culinary_type %}
 		<div class="{{ page.culinarily }} {{ culinary_type.parent_type }}">
-			<p>Culinarily this is...</p>
+			<div>Culinarily this is...</div>
 			<div class="answer">
 				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
 				{% if parent_culinary_type %}

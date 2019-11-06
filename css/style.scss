@@ -78,6 +78,9 @@ li:not(:last-child) {
 .type {
 	font-size: 20px;
 	font-weight: bold;
+	> div {
+		margin-top: 15px;
+	}
 	.fruit {
 
 	}
@@ -90,6 +93,8 @@ li:not(:last-child) {
 	
 	.answer {
 		font-size: 28px;
+		margin-top: 5px;
+		margin-left: 18px;
 		.answer-parent {
 			font-size: 16px;
 		}
