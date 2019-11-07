@@ -6,4 +6,6 @@ document.querySelector("form").addEventListener("submit", e => {
 	const option = document.querySelector(`option[value=${searchBox.value}]`);
 	if (option)
 		window.location.href = option.dataset.url;
+	else
+		searchBox.setCustomValidity("Invalid item.");
 });
