@@ -13,6 +13,8 @@ layout: default
 	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
 	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
 	{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+	{% assign legally_type = site.types | where:"type", page.legally_type | first %}
+	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 	<div class="type">
 		{% if botanical_type %}
 		<div class="{{ page.botanically }} {{ botanical_type.parent_type }}">
@@ -32,6 +34,17 @@ layout: default
 				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
 				{% if parent_culinary_type %}
 				<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
+				{% endif %}
+			</div>
+		</div>
+		{% endif %}
+		{% if legal_type %}
+		<div class="{{ page.legally }} {{ legal_type.parent_type }}">
+			<div>Legally this is...</div>
+			<div class="answer">
+				<a href="{{ legal_type.url }}">{{ legal_type.indefinite_title }}!</a>
+				{% if parent_legal_type %}
+				<span class="answer-parent">(A type of <a href="{{ parent_legal_type.url }}">{{ parent_legal_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
