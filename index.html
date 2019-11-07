@@ -11,11 +11,20 @@ scripts:
 <section>
 	<div>
 		<h2>Search for a food item:</h2>
-		<input id="search-box" type="text" list="items">
-		<datalist id="items">
-			{% for item in site.items %}
-				<option value="{{ item.title }}">
-			{% endfor %}
-		</datalist>
+		<form>
+			<input id="search-box" type="text" list="items">
+			<datalist id="items">
+				{% for item in site.items %}
+					<option value="{{ item.title }}" data-url="{{ item.url }}">
+				{% endfor %}
+			</datalist>
+		</form>
+		<noscript>
+			<ul>
+				{% for item in site.items %}
+					<li><a href="{{ item.url }}">{{ item.title }}"</a></li>
+				{% endfor %}
+			</ul>
+		</noscript>
 	</div>
 </section>
