@@ -14,6 +14,7 @@ scripts:
 		<h2>Search for a food item:</h2>
 		<form>
 			<input id="search-box" type="text" list="items" autocomplete="off">
+			<button id="search-button">Go To Item</button>
 			<datalist id="items">
 				{% for item in site.items %}
 					<option value="{{ item.title }}" data-url="{{ item.url }}">
