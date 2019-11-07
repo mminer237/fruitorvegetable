@@ -50,7 +50,7 @@ layout: default
 		</div>
 		{% endif %}
 	</div>
-	{{ page.content }}
+	{{ page.content | markdownify }}
 	{% assign is_fruit = page.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 	{% assign is_vegetable = page.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
 	{% if is_fruit or is_vegetable %}
