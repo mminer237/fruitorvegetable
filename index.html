@@ -12,7 +12,7 @@ scripts:
 	<div>
 		<h2>Search for a food item:</h2>
 		<form>
-			<input id="search-box" type="text" list="items">
+			<input id="search-box" type="text" list="items" autocomplete="off">
 			<datalist id="items">
 				{% for item in site.items %}
 					<option value="{{ item.title }}" data-url="{{ item.url }}">
