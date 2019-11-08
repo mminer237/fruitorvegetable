@@ -153,6 +153,9 @@ li:not(:last-child) {
 		}
 	}
 }
+.case-name {
+	font-style: italic;
+}
 footer {
 	background-color: $primary-color;
 	color: white;

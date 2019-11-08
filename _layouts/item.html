@@ -47,6 +47,11 @@ layout: default
 				<span class="answer-parent">(A type of <a href="{{ parent_legal_type.url }}">{{ parent_legal_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
+			{% if page.case_name %}
+			<div class="case">
+				See: <span class="case-name">{{ page.case_name }}</span>, <span class="case-cite"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=6%2C47&btnI=I%27m+Feeling+Lucky&q={{ page.case_cite }}">{{ page.case_cite }}</a></span> ({{ page.case_year }}).
+			</div>
+			{% endif %}
 		</div>
 		{% endif %}
 	</div>
