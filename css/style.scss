@@ -1,7 +1,7 @@
 ---
 ---
 $primary-color: #dc4d66;
-$lightish-primary-color: hsl(350, 67%, 70%);
+$light-primary-color: hsl(350, 67%, 85%);
 $darkish-secondary-color: #39580a;
 $secondary-color: hsl(84, 80%, 31%);
 $lightish-secondary-color: hsl(84, 70%, 69%);
@@ -161,7 +161,7 @@ footer {
 	color: white;
 	padding: 20px;
 	a {
-		color: $lightish-secondary-color;
+		color: $light-secondary-color;
 	}
 }
 @media (prefers-color-scheme: dark) {
