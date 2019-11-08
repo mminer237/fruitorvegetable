@@ -49,7 +49,18 @@ layout: default
 			</div>
 			{% if page.case_name %}
 			<div class="case">
-				See: <span class="case-name">{{ page.case_name }}</span>, <span class="case-cite"><a href="https://scholar.google.com/scholar?hl=en&as_sdt=6%2C47&btnI=I%27m+Feeling+Lucky&q={{ page.case_cite }}">{{ page.case_cite }}</a></span> ({{ page.case_year }}).
+				See: <span class="case-name">
+					{% if page.case_brief %}
+					<a href="{{ page.case_brief }}">
+					{% endif %}
+					{{ page.case_name }}
+					{% if page.case_brief %}
+					</a>
+					{% endif %}
+				</span>,
+				<span class="case-cite">
+					<a href="https://scholar.google.com/scholar?hl=en&as_sdt=6%2C47&btnI=I%27m+Feeling+Lucky&q={{ page.case_cite }}">{{ page.case_cite }}</a>
+				</span> ({{ page.case_year }}).
 			</div>
 			{% endif %}
 		</div>
