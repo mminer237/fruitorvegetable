@@ -13,7 +13,7 @@ layout: default
 	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
 	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
 	{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-	{% assign legally_type = site.types | where:"type", page.legally_type | first %}
+	{% assign legally_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 	<div class="type">
 		{% if botanical_type %}
