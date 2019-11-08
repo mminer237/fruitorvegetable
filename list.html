@@ -1,0 +1,14 @@
+---
+layout: default
+title: 'Browse Items'
+---
+
+<section>
+	<h2>{{ page.title }}</h2>
+	<p>Here is a complete list of every food item listed on the site:</p>
+	<ul>
+		{% for item in site.items %}
+			<li><a href="{{ item.url }}">{{ item.title }}"</a></li>
+		{% endfor %}
+	</ul>
+</section>

@@ -9,7 +9,7 @@ scripts:
 	<h2>About</h2>
 	<p>Ever wonder if something is a fruit or a vegetable? The answer is here! It may surprise you. Often, the answer is actually technically both.</p>
 </section>
-<section>
+<section id="search-section">
 	<div>
 		<h2>Search for a food item:</h2>
 		<form>
@@ -21,12 +21,16 @@ scripts:
 				{% endfor %}
 			</datalist>
 		</form>
-		<noscript>
-			<ul>
-				{% for item in site.items %}
-					<li><a href="{{ item.url }}">{{ item.title }}"</a></li>
-				{% endfor %}
-			</ul>
-		</noscript>
 	</div>
+</section>
+		<noscript>
+	<style>
+		#search-section {
+			display: none;
+		}
+	</style>
+		</noscript>
+<section>
+	<h2>Browse</h2>
+	<p><a href="/list">Click here to browse all listed food items!</a></p>
 </section>
