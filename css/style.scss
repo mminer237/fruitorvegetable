@@ -91,14 +91,14 @@ li:not(:last-child) {
 	> div:not(:first-child) {
 		margin-top: 15px;
 	}
-	.fruit {
+	.fruit .answer {
+		color: $primary-color;
+	}
+	.berry .answer {
 
 	}
-	.berry {
-
-	}
-	.vegetable {
-
+	.vegetable .answer {
+		color: $darkish-secondary-color;
 	}
 	
 	.answer {
