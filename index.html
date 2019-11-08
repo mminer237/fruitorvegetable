@@ -18,7 +18,7 @@ popular_items:
 <section>
 	<h2>Popular items:</h2>
 	<div id="popular-items">
-		{% for item_name in page.items %}
+		{% for item_name in page.popular_items %}
 			{% assign item = site.items | where:"slug", item_name | first %}
 			{% if item %}
 				<a href="{{ item.url }}">
