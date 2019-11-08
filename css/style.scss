@@ -44,12 +44,12 @@ header {
 		// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 		filter: drop-shadow(1px 1px 3px #000000c0);
 	}
+	$header-text-shadow: 2px 3px 6px rgba(0,0,0,.9);
 	h1 {
 		color: white;
 		display: inline-block;
 		margin: 0;
 		padding: 20px;
-		$header-text-shadow: 2px 3px 6px rgba(0,0,0,.9);
 		text-shadow: $header-text-shadow;
 		vertical-align: top;
 	}
