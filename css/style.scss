@@ -90,10 +90,14 @@ a:hover {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
-	>a>div {
-		box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
-		margin: 3px;
-		padding: 2px;
+	> a {
+		text-decoration: none;
+		font-weight: bold;
+		> div {
+			box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+			margin: 3px;
+			padding: 2px;
+		}
 	}
 	img {
 		max-height: 150px;
