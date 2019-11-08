@@ -31,6 +31,15 @@ header {
 	
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 	padding: 10px;
+	>* {
+		align-items: flex-end;
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	a {
+		text-decoration: none;
+	}
 	img {
 		// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 		filter: drop-shadow(1px 1px 3px #000000c0);
