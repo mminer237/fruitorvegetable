@@ -7,6 +7,7 @@ $light-primary-color: hsl(353, 100%, 94%);
 $darkish-secondary-color: #39580a;
 $secondary-color: hsl(84, 80%, 31%);
 $lightish-secondary-color: hsl(84, 70%, 69%);
+$light-secondary-color: hsl(84, 90%, 80%);
 :root {
 	--text-color: black;
 	--text-background-color: white;
@@ -107,7 +108,7 @@ a:hover, button:hover {
 	}
 }
 input[type="text"] {
-	background-color: $lightish-secondary-color;
+	background-color: $light-secondary-color;
 	border: 1px solid $secondary-color;
 	padding: 4px 5px;
 }
