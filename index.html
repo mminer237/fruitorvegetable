@@ -3,11 +3,35 @@ layout: default
 description: Is this a fruit or a vegetable? The scientific answer explained here!
 scripts:
   - /js/search.js
+popular_items:
+  - tomato
+  - cucumber
+  - pumpkin
+  - corn
+  - avocado
 ---
 
 <section>
 	<h2>About</h2>
 	<p>Ever wonder if something is a fruit or a vegetable? The answer is here! It may surprise you. Often, the answer is actually technically both.</p>
+</section>
+<section>
+	<h2>Popular items:</h2>
+	<div id="popular-items">
+		{% for item_name in page.items %}
+			{% assign item = site.items | where:"item", item_name | first %}
+			{% if item %}
+				<a href="{{ item.url }}">
+					<div>
+						{% if item.image %}
+							<img src="{{ item.image }}" alt="{{ item.title }}">
+						{% endif %}
+						<div>{{ item.title }}</div>
+					</div>
+				</a>
+			{% endif %}
+		{% endfor %}
+	</div>
 </section>
 <section id="search-section">
 	<div>
@@ -23,13 +47,13 @@ scripts:
 		</form>
 	</div>
 </section>
-		<noscript>
+<noscript>
 	<style>
 		#search-section {
 			display: none;
 		}
 	</style>
-		</noscript>
+</noscript>
 <section>
 	<h2>Browse</h2>
 	<p><a href="/list">Click here to browse all listed food items!</a></p>
