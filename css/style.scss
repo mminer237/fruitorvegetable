@@ -105,6 +105,9 @@ li:not(:last-child) {
 		font-size: 28px;
 		margin-top: 5px;
 		margin-left: 10px;
+		a {
+			color: inherit;
+		}
 		.answer-parent {
 			font-size: 16px;
 		}
