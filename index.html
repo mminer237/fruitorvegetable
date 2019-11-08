@@ -16,7 +16,7 @@ popular_items:
 	<p>Ever wonder if something is a fruit or a vegetable? The answer is here! It may surprise you. Often, the answer is actually technically both.</p>
 </section>
 <section>
-	<h2>Popular items:</h2>
+	<h2>Popular Items</h2>
 	<div id="popular-items">
 		{% for item_name in page.popular_items %}
 			{% assign item = site.items | where:"slug", item_name | first %}
@@ -35,7 +35,7 @@ popular_items:
 </section>
 <section id="search-section">
 	<div>
-		<h2>Search for a food item:</h2>
+		<h2>Search for a Food Item</h2>
 		<form>
 			<input id="search-box" type="text" list="items" autocomplete="off">
 			<button id="search-button">Go To Item</button>
