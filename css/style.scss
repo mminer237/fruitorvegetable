@@ -49,8 +49,12 @@ header {
 		display: inline-block;
 		margin: 0;
 		padding: 20px;
-		text-shadow: 2px 3px 6px rgba(0,0,0,.9);
+		$header-text-shadow: 2px 3px 6px rgba(0,0,0,.9);
+		text-shadow: $header-text-shadow;
 		vertical-align: top;
+		:hover {
+			text-shadow: $header-text-shadow, 0 0 5px rgba(256,256,256,0.5);
+		}
 	}
 }
 h1 {
@@ -78,6 +82,9 @@ h2, summary {
 }
 a {
 	color: $secondary-color;
+	:hover {
+		filter: brightness(1.4);
+	}
 }
 li:not(:last-child) {
 	margin-bottom: 8px;
