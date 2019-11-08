@@ -78,7 +78,7 @@ section, article, details {
 	padding: 10px;
 }
 h2, summary {
-	color: $secondary-color;
+	color: $primary-color;
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0 0 15px 0;
@@ -94,7 +94,6 @@ a:hover, button:hover {
 	justify-content: space-around;
 	text-align: center;
 	> a {
-		color: $primary-color;
 		text-decoration: none;
 		font-weight: bold;
 		> div {
@@ -108,12 +107,12 @@ a:hover, button:hover {
 	}
 }
 input[type="text"] {
-	background-color: $light-primary-color;
-	border: 1px solid $lightish-primary-color;
+	background-color: $lightish-secondary-color;
+	border: 1px solid $secondary-color;
 	padding: 4px 5px;
 }
 button {
-	background-color: $primary-color;
+	background-color: $secondary-color;
 	border: none;
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14);
 	color: #EEE;
