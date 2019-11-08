@@ -110,7 +110,6 @@ a:hover, button:hover {
 input[type="text"] {
 	background-color: $light-primary-color;
 	border: 1px solid $lightish-primary-color;
-	height: 16px;
 	padding: 4px 5px;
 }
 button {
@@ -119,9 +118,12 @@ button {
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14);
 	color: #EEE;
 	cursor: pointer;
-	height: 16px;
 	font-weight: bold;
 	padding: 5px 8px;
+}
+input[type="text"], button {
+	box-sizing: border-box;
+	height: 16px;
 }
 li:not(:last-child) {
 	margin-bottom: 8px;
