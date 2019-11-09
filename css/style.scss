@@ -89,6 +89,9 @@ h2, summary {
 details:not([open])>summary {
 	margin: 0;
 }
+p:first-child {
+	margin-top: 0;
+}
 a {
 	color: $secondary-color;
 }
@@ -136,6 +139,7 @@ li:not(:last-child) {
 blockquote {
 	background-color: $light-secondary-color;
 	border-left: 4px solid $secondary-color;
+	padding: 4px;
 }
 .type {
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14);
