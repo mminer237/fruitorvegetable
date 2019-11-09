@@ -65,7 +65,7 @@ layout: default
 	{{ page.content | markdownify }}
 	{% assign is_fruit = page.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 	{% assign is_vegetable = page.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
-	{% if is_fruit or is_vegetable %}
+	{% if is_fruit and is_vegetable %}
 	<p><a href="{% link /how-can-something-be-a-fruit-and-a-vegetable %}">How can something be both a fruit and a vegetable?</a></p>
 	{% endif %}
 </article>
