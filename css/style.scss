@@ -86,7 +86,7 @@ h2, h2 a, h3, h4, h5, h6, summary {
 h2, summary {
 	font-size: 24px;
 }
-details:not([open]) {
+details:not([open])>summary {
 	margin: 0;
 }
 a {
