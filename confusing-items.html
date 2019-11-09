@@ -10,11 +10,15 @@ title: 'Confusing Items'
 		{% for item in site.items %}
 			{% assign botanical_type = site.types | where:"type", item.botanically | first %}
 			{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
-			{% assign is_fruit = item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+			{% if item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+				{% assign is_fruit = true %}
+			{% endif %}
 
 			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
 			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-			{% assign is_vegetable = item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
+			{% if item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
+				{% assign is_vegetable = true %}
+			{% endif %}
 
 			{% if is_fruit and is_vegetable %}
 				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
