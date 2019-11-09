@@ -1,0 +1,24 @@
+---
+layout: default
+title: 'Confusing Items'
+---
+
+<section>
+	<h2>{{ page.title }}</h2>
+	<p>Here is a list of the food items listed that are botanically a fruit but which are not culinarily:</p>
+	<ul>
+		{% for item in site.items %}
+			{% assign botanical_type = site.types | where:"type", item.botanically | first %}
+			{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
+			{% assign is_fruit = item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+
+			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
+			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+			{% assign is_vegetable = item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
+
+			{% if is_fruit and is_vegetable %}
+				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</section>
