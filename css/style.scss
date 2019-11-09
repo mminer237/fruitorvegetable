@@ -139,6 +139,7 @@ li:not(:last-child) {
 blockquote {
 	background-color: $light-secondary-color;
 	border-left: 4px solid $secondary-color;
+	margin: 16px 8px;
 	padding: 4px;
 }
 .quote-signature::before {
