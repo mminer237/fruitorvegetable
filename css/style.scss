@@ -130,6 +130,10 @@ input[type="text"], button {
 li:not(:last-child) {
 	margin-bottom: 8px;
 }
+blockquote {
+	background-color: $light-secondary-color;
+	border-left: 4px solid $secondary-color;
+}
 .type {
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14);
 	font-size: 20px;
