@@ -3,4 +3,4 @@ title: 'Cucumber'
 botanically: berry
 culinarily: vegetable
 ---
-<p>Cucumbers are both.</p>
+Cucumbers are both.

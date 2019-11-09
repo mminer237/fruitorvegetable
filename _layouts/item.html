@@ -62,7 +62,7 @@ layout: default
 		</div>
 		{% endif %}
 	</div>
-	{{ page.content | markdownify }}
+	{{ page.content }}
 	{% if item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 		{% assign is_fruit = true %}
 	{% endif %}
