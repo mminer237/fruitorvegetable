@@ -29,6 +29,9 @@ defaults:
       layout: "type"
 
 collections:
+  pages:
+    output: true
+    permalink: /:path
   items:
     output: true
     permalink: /:path
