@@ -12,4 +12,6 @@ Ah, tomatoes. [This is the most asked-about plant by a large margin.](https://tr
 
 Intuitively, you would think that it is a vegetable. It's not that sweet. It doesn't grow on a tree. You put it in a regular salad, not a fruit salad. Doesn't that make it a vegetable? *Yes, it does.*
 
-"But wait," you say, "I've heard that it's technically a fruit." This is also true. A tomato is both a fruit *and* a vegetable.
+"But wait," you say, "I've heard that it's technically a fruit." This is also true. A tomato is both a fruit *and* a vegetable. Technically, it's a berry even.
+
+However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. This has no relevance for 99% of people. Unless you are a scientist studying plants, a tomato is a vegetable.
