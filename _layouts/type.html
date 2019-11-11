@@ -12,10 +12,44 @@ layout: default
 	{{ page.content }}
 </section>
 <details>
+	<summary>Subtypes of {{ page.plural_title }}</summary>
+	<ul>
+		{% for type in site.types %}
+			{% assign parent_type = type.parent_type %}
+			{% for i in (1..2) %}
+				{% if parent_type == page.type %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+					{% break %}
+				{% endif %}
+				{% assign parent_type = parent_type.parent_type %}
+			{% endfor %}
+		{% endfor %}
+	</ul>
+</details>
+<details>
 	<summary>List of {{ page.plural_title }}</summary>
 	<ul>
 		{% for item in site.items %}
-			{% if item.botanically == page.slug or item.culinarily  %}
+			{% assign botanical_type = site.types | where:"type", item.botanically | first %}
+			{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
+			{% for i in (1..2) %}
+				{% if parent_botanical_type.parent %}
+					{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
+				{% endif %}
+			{% endfor %}
+
+			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
+			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+
+			{% assign legal_type = site.types | where:"type", page.legally | first %}
+			{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
+
+			{% if item.botanically == page.type or
+			      parent_botanical_type.type == page.type or
+			      item.culinarily == page.type or
+			      parent_culinary_type.type == page.type or
+			      page.legally == page.type or
+			      parent_legal_type.type == page.type %}
 				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 			{% endif %}
 		{% endfor %}
