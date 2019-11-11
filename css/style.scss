@@ -9,6 +9,7 @@ $secondary-color: hsl(84, 80%, 31%);
 $lightish-secondary-color: hsl(84, 70%, 69%);
 $light-secondary-color: hsl(84, 90%, 80%);
 $grain-color: hsl(49, 82%, 63%);
+$black-hover-color: #333;
 :root {
 	--text-color: black;
 	--text-background-color: white;
@@ -173,6 +174,9 @@ blockquote {
 	.grain .answer {
 		color: $grain-color;
 	}
+	.answer:hover {
+		color: $black-hover-color;
+	}
 	
 	.answer {
 		font-size: 28px;
@@ -215,5 +219,8 @@ footer {
 	}
 	.vegetable .answer {
 		color: $lightish-secondary-color;
+	}
+	.answer:hover {
+		color: #FFF;
 	}
 }
