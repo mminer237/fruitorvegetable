@@ -72,9 +72,13 @@ layout: default
 	{{ page.content }}
 	{% if page.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 		{% assign is_fruit = true %}
+	{% else %}
+		{% assign is_fruit = false %}
 	{% endif %}
 	{% if page.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
 		{% assign is_vegetable = true %}
+	{% else %}
+		{% assign is_vegetable = false %}
 	{% endif %}
 	{% if is_fruit and is_vegetable %}
 	<p><a href="{% link _pages/how-can-something-be-a-fruit-and-a-vegetable.html %}">How can something be both a fruit and a vegetable?</a></p>

@@ -17,12 +17,16 @@ title: 'Confusing Items'
 			{% endfor %}
 			{% if item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 				{% assign is_fruit = true %}
+			{% else %}
+				{% assign is_fruit = false %}
 			{% endif %}
 
 			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
 			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
 			{% if item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
 				{% assign is_vegetable = true %}
+			{% else %}
+				{% assign is_vegetable = false %}
 			{% endif %}
 
 			{% if is_fruit and is_vegetable %}
