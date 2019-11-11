@@ -11,8 +11,15 @@ layout: default
 	{% endif %}
 	{% assign botanical_type = site.types | where:"type", page.botanically | first %}
 	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
+	{% for i in (1..2) %}
+		{% if parent_botanical_type.parent %}
+			{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
+		{% endif %}
+	{% endfor %}
+
 	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
 	{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+
 	{% assign legal_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 	<div class="type">
