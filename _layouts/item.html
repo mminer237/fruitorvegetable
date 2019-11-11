@@ -63,10 +63,10 @@ layout: default
 		{% endif %}
 	</div>
 	{{ page.content }}
-	{% if item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+	{% if page.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
 		{% assign is_fruit = true %}
 	{% endif %}
-	{% if item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
+	{% if page.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
 		{% assign is_vegetable = true %}
 	{% endif %}
 	{% if is_fruit and is_vegetable %}
