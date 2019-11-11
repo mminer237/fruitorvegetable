@@ -1,5 +1,5 @@
 ---
-title: Apple
+title: Pear
 botanically: pome
 culinarily: fruit
 ---
