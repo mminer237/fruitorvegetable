@@ -23,13 +23,13 @@ title: 'Confusing Items'
 
 			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
 			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-			{% if item.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
-				{% assign is_vegetable = true %}
+			{% if item.culinarily != "fruit" and culinary_type.parent_type != "fruit" %}
+				{% assign is_not_fruit = true %}
 			{% else %}
-				{% assign is_vegetable = false %}
+				{% assign is_not_fruit = false %}
 			{% endif %}
 
-			{% if is_fruit and is_vegetable %}
+			{% if is_fruit and is_not_fruit %}
 				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 			{% endif %}
 		{% endfor %}
