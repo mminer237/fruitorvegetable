@@ -11,21 +11,31 @@ layout: default
 	{% endif %}
 	{{ page.content }}
 </section>
-<details>
-	<summary>Subtypes of {{ page.plural_title }}</summary>
-	<ul>
-		{% for type in site.types %}
-			{% assign parent_type = type.parent_type %}
-			{% for i in (1..2) %}
-				{% if parent_type == page.type %}
-					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
-					{% break %}
+{% assign subtypes = '' | split: '' %}
+{% for type in site.types %}
+	{% assign parent_type = type.parent_type %}
+	{% for i in (1..2) %}
+		{% if parent_type == page.type %}
+			{% assign type_type_array = type.type | split: 'XXXXXXXXXXXXXXXXXX' %}
+			{% assign subtypes = subtypes | concat: type_type_array %}
+			{% break %}
+		{% endif %}
+		{% assign parent_type = site.types | where:"type", parent_type | first %}
+		{% assign parent_type = parent_type.parent_type %}
+	{% endfor %}
+{% endfor %}
+{% if subtypes.size > 0 %}
+	<details>
+		<summary>Subtypes of {{ page.plural_title }}</summary>
+		<ul>
+			{% for type in site.types %}
+				{% if subtypes contains type.type %}
+					<li><a href="{{ type.url }}">{{ type.title }}</a></li>
 				{% endif %}
-				{% assign parent_type = parent_type.parent_type %}
 			{% endfor %}
-		{% endfor %}
-	</ul>
-</details>
+		</ul>
+	</details>
+{% endif %}
 <details>
 	<summary>List of {{ page.plural_title }}</summary>
 	<ul>
