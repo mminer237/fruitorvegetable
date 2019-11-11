@@ -17,8 +17,13 @@ layout: default
 		{% endif %}
 	{% endfor %}
 
-	{% assign culinary_type = site.types | where:"type", page.culinarily | first %}
-	{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+	{% assign parent_culinary_type_names = '' | split: '' %}
+	{% for culinary_type_name in page.culinarily %}
+		{% assign culinary_type = site.types | where:"type", culinary_type_name | first %}
+		{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+		{% assign parent_culinary_type_name = parent_culinary_type.type | split: 'XXXXX' %}
+		{% assign parent_culinary_type_names = parent_culinary_type_names | concat: parent_culinary_type_name %}
+	{% endfor %}
 
 	{% assign legal_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
@@ -35,13 +40,20 @@ layout: default
 		</div>
 		{% endif %}
 		{% if culinary_type %}
-		<div class="{{ page.culinarily }} {{ culinary_type.parent_type }}">
+		<div class="{% for culinary_type_name in page.culinarily %}{{ culinary_type_name }} {% endfor %} {{ parent_culinary_type_names | join: ' ' }}">
 			<div>Culinarily, this is...</div>
 			<div class="answer">
-				<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
-				{% if parent_culinary_type %}
-				<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
-				{% endif %}
+				{% for culinary_type_name in page.culinarily %}
+					{% if forloop.first != true %}
+						and 
+					{% endif %}
+					{% assign culinary_type = site.types | where:"type", culinary_type_name | first %}
+					<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
+					{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
+					{% if parent_culinary_type %}
+						<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
+					{% endif %}
+				{% endfor %}
 			</div>
 		</div>
 		{% endif %}
@@ -75,7 +87,7 @@ layout: default
 	{% else %}
 		{% assign is_fruit = false %}
 	{% endif %}
-	{% if page.culinarily == "vegetable" or culinary_type.parent_type == "vegetable" %}
+	{% if page.culinarily contains "vegetable" or parent_culinary_type_names contains "vegetable" %}
 		{% assign is_vegetable = true %}
 	{% else %}
 		{% assign is_vegetable = false %}
