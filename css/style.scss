@@ -193,7 +193,7 @@ blockquote {
 	.grain .answer {
 		color: $grain-color;
 	}
-	.answer:hover {
+	:not(.fruit):not(.vegetable):not(.grain)>.answer a:hover {
 		color: $black-hover-color;
 	}
 	
