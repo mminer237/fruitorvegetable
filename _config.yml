@@ -43,4 +43,12 @@ sass:
   style: compressed
 
 plugins:
+  - jekyll-responsive-image
   - jekyll-sitemap
+
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 700
+    - width: 130
+  auto_rotate: true

@@ -24,7 +24,10 @@ popular_items:
 				<a href="{{ item.url }}">
 					<div>
 						{% if item.image %}
-							<img src="{{ item.image }}" alt="{{ item.title }}">
+{% responsive_image_block %}
+  path: {{ item.image }}
+  alt: {{ item.title }}
+{% endresponsive_image_block %}
 						{% endif %}
 						<div>{{ item.title }}</div>
 					</div>

@@ -2,7 +2,7 @@
 title: Peach
 botanically: drupe
 culinarily: fruit
-image: /assets/images/peaches.jpg
+image: assets/images/peaches.jpg
 ---
 Peaches are classic fruits. They are more specifically the most common [drupe]({% link _types/drupe.html %}) botanically. (I.e., they have a stone/pit.)
 

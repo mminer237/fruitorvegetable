@@ -7,7 +7,10 @@ layout: default
 		<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 	</div>
 	{% if page.image %}
-	<img src="{{ page.image }}" alt="{{ page.title }}">
+{% responsive_image_block %}
+  path: {{ page.image }}
+  alt: {{ page.title }}
+{% endresponsive_image_block %}
 	{% endif %}
 	{% assign botanical_type = site.types | where:"type", page.botanically | first %}
 	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
