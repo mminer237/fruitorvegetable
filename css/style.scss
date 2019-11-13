@@ -115,6 +115,7 @@ a:hover, button:hover {
 	filter: brightness(1.4);
 }
 #popular-items {
+	align-items: end;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
