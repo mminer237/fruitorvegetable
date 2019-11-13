@@ -42,7 +42,7 @@ layout: default
 			</div>
 		</div>
 		{% endif %}
-		{% if culinary_type %}
+		{% if page.culinarily and culinary_type %}
 		<div class="{% for culinary_type_name in page.culinarily %}{{ culinary_type_name }} {% endfor %} {{ parent_culinary_type_names | join: ' ' }}">
 			<div>Culinarily, this is...</div>
 			<div class="answer">
