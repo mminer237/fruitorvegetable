@@ -2,6 +2,7 @@
 title: Potato
 botanically: tuber
 culinarily: vegetable
+image: assets/images/potatoes.jpg
 ---
 Ah, potatoes—one of the greatest vegetables ever. Boil 'em, mash 'em, stick 'em in a stew—their deliciousness is matched only by their versatility.
 
