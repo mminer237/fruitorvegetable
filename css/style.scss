@@ -117,6 +117,7 @@ a:hover, button:hover {
 #popular-items {
 	align-items: end;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
 	> a {
