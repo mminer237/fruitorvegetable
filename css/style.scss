@@ -84,6 +84,9 @@ section, article, details {
 	max-width: 700px;
 	margin: 15px auto;
 	padding: 10px;
+	img {
+		max-width: 700px;
+	}
 }
 h2, h2 a, h3, h4, h5, h6, summary {
 	color: $primary-color;
@@ -125,7 +128,7 @@ a:hover, button:hover {
 		}
 	}
 	img {
-		max-height: 150px;
+		max-width: 150px;
 	}
 }
 #search-section form {
