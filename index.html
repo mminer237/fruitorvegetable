@@ -40,9 +40,9 @@ popular_items:
 </section>
 <section id="search-section">
 	<div>
-		<h2>Search for a Food Item</h2>
+		<h2 id="search-header">Search for a Food Item</h2>
 		<form>
-			<input id="search-box" type="text" list="items" autocomplete="off">
+			<input id="search-box" aria-labelledby="search-header" type="text" list="items" autocomplete="off">
 			<button id="search-button">Go To Item</button>
 			<datalist id="items">
 				{% for item in site.items %}
