@@ -11,11 +11,11 @@ title: 'Confusing Items'
 			{% assign botanical_type = site.types | where:"type", item.botanically | first %}
 			{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
 			{% for i in (1..2) %}
-				{% if parent_botanical_type.parent %}
+				{% if parent_botanical_type.parent_type %}
 					{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
 				{% endif %}
 			{% endfor %}
-			{% if item.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+			{% if item.botanically == "fruit" or parent_botanical_type.type == "fruit" %}
 				{% assign is_fruit = true %}
 			{% else %}
 				{% assign is_fruit = false %}
