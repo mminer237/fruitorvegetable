@@ -85,7 +85,7 @@ layout: default
 		{% endif %}
 	</div>
 	{{ page.content }}
-	{% if page.botanically == "fruit" or botanical_type.parent_type == "fruit" %}
+	{% if page.botanically == "fruit" or parent_botanical_type.type == "fruit" %}
 		{% assign is_fruit = true %}
 	{% else %}
 		{% assign is_fruit = false %}
