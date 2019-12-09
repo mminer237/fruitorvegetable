@@ -79,6 +79,10 @@ layout: default
 				<span class="case-cite">
 					<a href="https://scholar.google.com/scholar?hl=en&as_sdt=6%2C47&btnI=I%27m+Feeling+Lucky&q={{ page.case_cite }}">{{ page.case_cite }}</a>
 				</span> ({{ page.case_year }}).
+				{% if page.case_dicta %}
+				<br>
+				(Note that this was only in <a href="https://en.wikipedia.org/wiki/Obiter_dictum" lang="la">obiter dicta</a>. It's not actually legally-binding precedent about whether this is a fruit or a vegetable.)
+				{% endif %}
 			</div>
 			{% endif %}
 		</div>
