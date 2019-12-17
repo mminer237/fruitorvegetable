@@ -2,6 +2,7 @@
 title: Corn
 botanically: caryopsis
 culinarily: [vegetable, grain]
+image: assets/images/dent-corn.jpg
 ---
 Corn—what a plant. Each individual kernel is its own fruit, the cob is very nearly a separate fruit, some types are vegetables, **and** corn is generally a grain. It truly is marvelous. It is the most-produced crop on earth. People eat it raw, cooked, creamed, baked, ground-up, popped, as syrup, and in desserts, we use it to create ethanol for our cars, and cattle eat as much corn as humanity several times over.
 
