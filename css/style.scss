@@ -76,6 +76,7 @@ header, footer {
 }
 main {
 	flex-grow: 1;
+	padding-bottom: 35px;
 }
 section, article, details {
 	background-color: var(--text-background-color);
