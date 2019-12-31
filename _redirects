@@ -1,2 +1,6 @@
-/pitaya  	/dragon-fruit
-/pitahaya	/dragon-fruit
+---
+layout: none
+---
+{% for item in site.data.fruit_redirects %}
+	{{ item.original }}	{{ item.url }}
+{% endfor %}

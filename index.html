@@ -46,7 +46,8 @@ popular_items:
 			<input id="search-box" aria-labelledby="search-header" type="text" list="items" autocomplete="off">
 			<button id="search-button">Go To Item</button>
 			<datalist id="items">
-				{% for item in site.items %}
+				{% assign items = site.items | concat: site.data.fruit_redirects | sort: 'title' %}
+				{% for item in items %}
 					<option value="{{ item.title }}" data-url="{{ item.url }}">
 				{% endfor %}
 			</datalist>
