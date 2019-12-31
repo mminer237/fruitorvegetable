@@ -32,6 +32,8 @@ defaults:
     values:
       layout: "type"
 
+include: [_redirects]
+
 collections:
   pages:
     output: true
