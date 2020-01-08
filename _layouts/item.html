@@ -12,8 +12,13 @@ layout: default
   alt: {{ page.title }}
 {% endresponsive_image_block %}
 	{% endif %}
-	{% assign botanical_type = site.types | where:"type", page.botanically | first %}
-	{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
+	{% if page.botanically | first %}
+		{% assign first_botanical_type_name = page.botanically | first %}
+	{% else %}
+		{% assign first_botanical_type_name = page.botanically %}
+	{% endif %}
+	{% assign first_botanical_type = site.types | where:"type", first_botanical_type_name | first %}
+	{% assign parent_botanical_type = site.types | where:"type", first_botanical_type.parent_type | first %}
 	{% for i in (1..2) %}
 		{% if parent_botanical_type.parent_type %}
 			{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
@@ -31,13 +36,22 @@ layout: default
 	{% assign legal_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 	<div class="type">
-		{% if botanical_type %}
+		{% if first_botanical_type %}
 		<div class="{{ page.botanically }} {{ parent_botanical_type.type }}">
 			<div>Botanically, this is...</div>
 			<div class="answer">
-				<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
+				<a href="{{ first_botanical_type.url }}">{{ first_botanical_type.indefinite_title }}!</a>
+				{% if page.botanically | first %}
+					{% for botanical_type_name in page.botanically %}
+						{% if forloop.first == false %}
+							{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
+							and
+							<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
 				{% if parent_botanical_type %}
-				<span class="answer-parent">(A type of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
+				<span class="answer-parent">({% if page.botanically | first %}Types{% else %}A type{% endif %} of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
