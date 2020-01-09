@@ -52,14 +52,17 @@ layout: default
 					{% assign is_botanically = true %}
 				{% else %}
 					{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
-					{% for i in (1..2) %}
-						{% if parent_botanical_type.parent_type %}
-							{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
-						{% endif %}
-					{% endfor %}
 					{% if parent_botanical_type.type == page.type %}
 						{% assign is_botanically = true %}
 					{% endif %}
+					{% for i in (1..2) %}
+						{% if parent_botanical_type.parent_type %}
+							{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
+							{% if parent_botanical_type.type == page.type %}
+								{% assign is_botanically = true %}
+							{% endif %}
+						{% endif %}
+					{% endfor %}
 				{% endif %}
 			{% endfor %}
 
