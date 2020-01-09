@@ -45,8 +45,8 @@ layout: default
 			{% else %}
 				{% assign botanical_type_names = item.botanically | split: 'XXXXXXXXXXXXXXXXXX' %}
 			{% endif %}
+			{% assign is_botanically = false %}
 			{% for botanical_type_name in botanical_type_names %}
-				{% assign is_botanically = false %}
 				{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
 				{% if botanical_type.type == page.type %}
 					{% assign is_botanically = true %}
