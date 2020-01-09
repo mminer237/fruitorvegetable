@@ -64,10 +64,14 @@ layout: default
 			<div class="answer">
 				{% for culinary_type_name in page.culinarily %}
 					{% if forloop.first != true %}
-						and 
+						&amp; 
 					{% endif %}
 					{% assign culinary_type = site.types | where:"type", culinary_type_name | first %}
-					<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}!</a>
+					<a href="{{ culinary_type.url }}">{{ culinary_type.indefinite_title }}
+						{%- if forloop.last == true -%}
+							!
+						{%- endif -%}
+					</a>
 					{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
 					{% if parent_culinary_type %}
 						<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
