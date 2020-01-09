@@ -12,7 +12,7 @@ layout: default
   alt: {{ page.title }}
 {% endresponsive_image_block %}
 	{% endif %}
-	{% if page.botanically | first %}
+	{% if page.botanically.first %}
 		{% assign first_botanical_type_name = page.botanically | first %}
 	{% else %}
 		{% assign first_botanical_type_name = page.botanically %}
@@ -41,7 +41,7 @@ layout: default
 			<div>Botanically, this is...</div>
 			<div class="answer">
 				<a href="{{ first_botanical_type.url }}">{{ first_botanical_type.indefinite_title }}!</a>
-				{% if page.botanically | first %}
+				{% if page.botanically.first %}
 					{% for botanical_type_name in page.botanically %}
 						{% if forloop.first == false %}
 							{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
@@ -51,7 +51,7 @@ layout: default
 					{% endfor %}
 				{% endif %}
 				{% if parent_botanical_type %}
-				<span class="answer-parent">({% if page.botanically | first %}Types{% else %}A type{% endif %} of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
+				<span class="answer-parent">({% if page.botanically.first %}Types{% else %}A type{% endif %} of <a href="{{ parent_botanical_type.url }}">{{ parent_botanical_type.title | downcase }}</a>)</span>
 				{% endif %}
 			</div>
 		</div>
