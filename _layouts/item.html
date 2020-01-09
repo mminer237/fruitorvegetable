@@ -45,7 +45,7 @@ layout: default
 					{% for botanical_type_name in page.botanically %}
 						{% if forloop.first == false %}
 							{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
-							and
+							&amp;
 							<a href="{{ botanical_type.url }}">{{ botanical_type.indefinite_title }}!</a>
 						{% endif %}
 					{% endfor %}
