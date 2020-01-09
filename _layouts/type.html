@@ -40,11 +40,26 @@ layout: default
 	<summary>List of {{ page.plural_title }}</summary>
 	<ul>
 		{% for item in site.items %}
-			{% assign botanical_type = site.types | where:"type", item.botanically | first %}
-			{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
-			{% for i in (1..2) %}
-				{% if parent_botanical_type.parent_type %}
-					{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
+			{% if item.botanically.first %}
+				{% assign botanical_type_names = item.botanically %}
+			{% else %}
+				{% assign botanical_type_names = item.botanically | split: 'XXXXXXXXXXXXXXXXXX' %}
+			{% endif %}
+			{% for botanical_type_name in botanical_type_names %}
+				{% assign is_botanically = false %}
+				{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
+				{% if botanical_type.type == page.type %}
+					{% assign is_botanically = true %}
+				{% else %}
+					{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
+					{% for i in (1..2) %}
+						{% if parent_botanical_type.parent_type %}
+							{% assign parent_botanical_type = site.types | where:"type", parent_botanical_type.parent_type | first %}
+						{% endif %}
+					{% endfor %}
+					{% if parent_botanical_type.type == page.type %}
+						{% assign is_botanically = true %}
+					{% endif %}
 				{% endif %}
 			{% endfor %}
 
@@ -54,8 +69,7 @@ layout: default
 			{% assign legal_type = site.types | where:"type", page.legally | first %}
 			{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 
-			{% if item.botanically == page.type or
-			      parent_botanical_type.type == page.type or
+			{% if is_botanically == true or
 			      item.culinarily == page.type or
 			      parent_culinary_type.type == page.type or
 			      page.legally == page.type or
