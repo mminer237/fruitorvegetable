@@ -37,7 +37,7 @@ header {
 
 	/* Split version */ // Should I use this instead?
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVQImWO445v23zKC6z8AE2IEKbO7jUwAAAAASUVORK5CYII=) center/cover;
-	image-rendering: -webkit-optimize-contrast;
+	image-rendering: pixelated;
 	image-rendering: crisp-edges;
 	
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
