@@ -56,5 +56,5 @@ responsive_image:
   template: _includes/responsive-image.html
   sizes:
     - width: 700
-    - width: 130
+    - width: 126
   auto_rotate: true
