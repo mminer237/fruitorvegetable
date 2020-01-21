@@ -2,6 +2,8 @@
 title: 'Cucumber'
 botanically: pepo
 culinarily: vegetable
+image: assets/images/cucumbers.jpg
+image_caption: <a href="https://www.pikrepo.com/fyfjj/baskets-of-cucumbers">Photo from Pikrepo</a>
 ---
 Yes, cucumbers are botanically a fruit. While they are probably one of the last plants that we would think of as a "[berry]({% link _types/berry.html %})," that is what they are botanically (specifically, the botanical subclassification of "[pepo]({% link _types/pepo.html %})") because they have seeds inside them, are fleshy, were made from a single ovary, and don't split open to spread their seeds everywhere. This definition just largely independent from our everyday culinary definition.
 
