@@ -2,6 +2,8 @@
 title: Pumpkin
 botanically: pepo
 culinarily: vegetable
+image: assets/images/pumpkins.jpg
+image_caption: <a href="https://www.flickr.com/photos/danielle_scott/5048428506">Photo by Danielle Scott</a>
 ---
 Pumpkins are admittedly closer than most. They are botanically a type of [berry]({% link _types/berry.html %}) called a "[pepo]({% link _types/pepo.html %})" due to their seed-bearing fleshiness and hard outer rinds. Their culinary classification requires a bit more discussion however.
 
