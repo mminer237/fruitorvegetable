@@ -178,6 +178,13 @@ blockquote {
 .quote-signature::before {
 	content: "—";
 }
+figure {
+	margin: 0;
+}
+figcaption {
+	color: #757575;
+	text-align: center;
+}
 .type {
 	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.14);
 	font-size: 20px;
