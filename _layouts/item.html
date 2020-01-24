@@ -43,6 +43,7 @@ layout: default
 	{% assign legal_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
 	<div class="type">
+		<div class="question">Is the {{ page.title }} a Fruit or a Vegetable?</div>
 		{% if first_botanical_type %}
 		<div class="{{ page.botanically }} {{ parent_botanical_type.type }}">
 			<div>Botanically, this is...</div>
