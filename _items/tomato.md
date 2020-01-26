@@ -14,6 +14,8 @@ Ah, tomatoes. [This is the most asked-about plant by a large margin.](https://tr
 
 Intuitively, you would think that it is a vegetable. It's not that sweet. It doesn't grow on a tree. You put it in a regular salad, not a fruit salad. Doesn't that make it a vegetable? *Yes, it does.*
 
-"But wait," you say, "I've heard that it's technically a fruit." This is also true. A tomato is both a fruit *and* a vegetable. Technically, it's a berry even.
+"But wait," you say, "I've heard that it's technically a fruit." This is also true. Botanically a tomato is the fruit of the plant. A tomato is both a fruit *and* a vegetable, at least in some sense of the words. Technically, it's a berry even.
 
-However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. This has no relevance for 99% of people. Unless you are a scientist studying plants, a tomato is a vegetable.
+However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. This has no relevance for 99% of people. Unless you are a scientist studying plants, the botanical definitions of "fruit" and berry" are useless for you. A tomato is a vegetable.
+
+If you call tomatoes fruits just because they are the seed-bearing part of the tomato plant, there are [many other vegetables you would have to miscategorize under such logic]({% link _pages/confusing-items.html %}). [Cucumbers]({% link _items/cucumber.md %}), [olives]({% link _items/olive.md %}), [pumpkins]({% link _items/pumpkin.md %}), [corn]({% link _items/corn.md %}), and many more vegetables all comprise the fruit of plants. But to call such things fruits would make the word "fruit" lose a large part of its meaning.
