@@ -2,6 +2,8 @@
 title: Dragon Fruit
 botanically: berry
 culinarily: fruit
+image: assets/images/dragon-fruits.jpg
+image_caption: I paid $13 for two dragon fruits.
 ---
 Dragon fruit, sometimes called pitaya or pitahaya, is a kind-of funny-looking fruit grown in more tropical climates. I also use a poorly-drawn representation of it in [my logo for this site]({% link assets/logo.svg %}) because of its odd spikes.
 
