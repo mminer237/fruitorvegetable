@@ -2,6 +2,7 @@
 title: Pineapple
 botanically: multiple-fruit
 culinarily: fruit
+image: assets/images/pineapples.jpg
 ---
 Pineapples are definitely fruits. They are very sweet and often eaten as a type of dessert. They are most commonly eaten raw, like most other fruits, but they are sometimes grilled first. However, this only seems to make them even sweeter and more delicious somehow.
 
