@@ -47,7 +47,11 @@ layout: default
 			{{ page.article }}
 		{%- elsif page.article != false -%}
 			the 
-		{%- endif %} {{ page.title }} a Fruit or a Vegetable?</div>
+		{%- endif %} {{ page.title }} {% if page.question -%}
+			{{ page.question }}
+		{%- elsif page.question != false -%}
+			a Fruit or Vegetable 
+		{%- endif %}?</div>
 		{% if first_botanical_type %}
 		<div class="{{ page.botanically }} {{ parent_botanical_type.type }}">
 			<div>Botanically, this is...</div>

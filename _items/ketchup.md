@@ -1,6 +1,7 @@
 ---
 title: Ketchup
 article: ""
+question: a Jam
 speakables: [".speakable"]
 ---
 Okay, so I've heard some people saying some whack things about ketchup. The logic I've heard goes like this: "A tomato is a fruit. A jam is a congealed spread created from fruits. A tomato is a fruit. Ketchup is made from tomatoes. Therefore, ketchup is a jam."
