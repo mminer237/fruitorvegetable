@@ -12,4 +12,4 @@ Jams are basically always sweet. Even with already sweet fruits, sugar is normal
 
 The other big problem with ketchup being a jam is that jams *do* have to be semisolid. It has to be heated to get its pectin to congeal. That's what makes it so jelly-like. Ketchup is a little viscous—more than water at least—but it is no where near thick enough to resemble a jam. It flows quite easily. In fact, the main ketchup-seller, Heinz, [will reject and refuse to sell ketchup if it is too viscous](https://www.heinz.com.hk/en/trivia/tomato-ketchup).
 
-In conclusion, <span class="speakable">ketchup is not a jam. It is not made with fruit, it is not sweet enough, and it is not very viscous. It is just a kind of sweet, vinegary sauce used as a condiment.</span> This is not a bad thing for ketchup—I quite enjoy it—but it is definitely not a jam.
+In conclusion, <span class="speakable">ketchup is not a jam. It is not made with fruit, it is not sweet enough, and it is not very viscous. It is just a kind-of-sweet, vinegary sauce used as a condiment.</span> This is not a bad thing for ketchup—I quite enjoy it—but it is definitely not a jam.
