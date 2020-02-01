@@ -34,6 +34,22 @@
 		{% for script in page.scripts %}
 		<script src="{{ script }}" defer></script>
 		{% endfor %}
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org/",
+				"@type": "WebPage",
+				"name": "{% if page.url == "/" %}{{ site.title | xml_escape }}{% else %}{{ page.title | xml_escape }}{% endif %}",
+				"url": "{{ site.url }}{{ page.url }}"
+				{%- if page.speakables -%}
+				, "speakable": {
+					"@type": "SpeakableSpecification",
+					"cssSelector": [
+						"{{ page.speakables | join: '", ' }}"
+					]
+				}
+			}
+			{%- endif %}
+		</script>
 	</head>
 	<body>
 		{% if site.tagManagerCode %}<!-- Google Tag Manager (noscript) -->
