@@ -50,7 +50,7 @@ layout: default
 				{% assign botanical_type = site.types | where:"type", botanical_type_name | first %}
 				{% if botanical_type.type == page.type %}
 					{% assign is_botanically = true %}
-				{% else %}
+				{% elsif page.type != "fruit" %}
 					{% assign parent_botanical_type = site.types | where:"type", botanical_type.parent_type | first %}
 					{% if parent_botanical_type.type == page.type %}
 						{% assign is_botanically = true %}
