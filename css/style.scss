@@ -176,6 +176,9 @@ blockquote {
 	margin: 16px 8px;
 	padding: 4px;
 }
+ol::marker {
+	font-weight: bold;
+}
 .quote-signature::before {
 	content: "—";
 }
