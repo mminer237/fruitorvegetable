@@ -2,7 +2,7 @@
 title: Almond
 botanically: seed
 culinarily: nut
-image: assets/images/almonds.jpg
+image: assets/images/almonds.png
 image_caption: <a href="https://commons.wikimedia.org/wiki/File:Almonds.png">Photo by M. Verkerk</a> under <a href="https://creativecommons.org/licenses/by-sa/2.5/deed.en">CC-BY-SA-2.5</a>
 speakables: [".speakable"]
 ---

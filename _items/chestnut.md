@@ -2,7 +2,7 @@
 title: Chestnut
 botanically: nut
 culinarily: nut
-image: https://upload.wikimedia.org/wikipedia/commons/9/98/Chestnuts_at_Ljubljana_Central_Market.JPG
+image: assets/images/chestnuts.jpg
 image_caption: <a href="https://en.wikipedia.org/wiki/File:Chestnuts_at_Ljubljana_Central_Market.JPG">Photo by domdomegg</a> under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a>
 speakables: [".speakable"]
 ---
