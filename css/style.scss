@@ -234,7 +234,10 @@ figcaption {
 footer {
 	background-color: $primary-color;
 	color: #EEE;
-	padding: 20px;
+	padding: 10px;
+	div {
+		margin: 10px;
+	}
 	a {
 		color: $lightish-secondary-color;
 	}
