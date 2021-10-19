@@ -1,6 +1,7 @@
 ---
 title: Avocado
 botanically: berry
+culinarily: unknown
 legally: fruit
 case_name: Florida Lime & Avocado Growers, Inc. v. Paul
 case_cite: 373 U.S. 132
