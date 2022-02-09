@@ -9,7 +9,7 @@ case_year: 1963
 case_dicta: true
 image: assets/images/avocados.jpg
 ---
-Avocados are definitely fruits botanically. They are the ripened ovaries of the avocado tree and contain seeds. Interestingly, they are technically a <a href="{% link _types/berry.html %}">berry</a> instead of a <a href="{% link _types/drupe.html %}">drupe</a> because there is a *very* thin endocarp (third layer of fruit) around the stone. This has no practical effect for you.
+Avocados are definitely fruits botanically. They are the ripened ovaries of the avocado tree and contain seeds. Interestingly, they are technically a <a href="{% link _types/berry.html %}">berry</a> instead of a <a href="{% link _types/drupe.html %}">drupe</a> because there is a *very* thin endocarp (third layer of fruit) around the stone. [This has no practical effect for you.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %})
 
 Culinarily, they're...well...I'm honestly not sure. I would personally think of them more as a vegetable because they're not sweet and they're more substantive. I would never eat an avocado for a fruity snack. They're high in fat, not sugar.
 

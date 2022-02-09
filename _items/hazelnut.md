@@ -10,4 +10,4 @@ Hazelnuts are the nuts of the hazel tree. I know, crazy, right? This is a very a
 
 Note that this is qualified to if it is the whole hazelnut that we are talking about. If we are talking about shelled hazelnuts, those are no longer the nut of the hazel, but merely the [seed]({% link _types/seed.html %}). Since the shell is the pericarp of the fruit, it is a key part of it being a nut botanically.
 
-If we are talking about eating hazelnuts or hazelnut-containing foods however, these botanical definitions are irrelevant. Culinarily, hazelnuts are obviously considered to be nuts whether or not they have the shell on them. They taste very nutty, and literally have "nut" in the name. People consider them to be nuts, so they are nuts.
+If we are talking about eating hazelnuts or hazelnut-containing foods however, [these botanical definitions are irrelevant.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %}) Culinarily, hazelnuts are obviously considered to be nuts whether or not they have the shell on them. They taste very nutty, and literally have "nut" in the name. People consider them to be nuts, so they are nuts.
