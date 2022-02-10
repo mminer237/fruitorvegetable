@@ -87,7 +87,9 @@ section, article, details {
 	margin: 15px auto;
 	padding: 10px;
 	img {
-		max-width: 700px;
+		display: block;
+		max-width: unquote("min(96vw, 700px)");
+		margin: auto;
 	}
 }
 h2, h2 a, h3, h4, h5, h6, summary {
@@ -133,6 +135,7 @@ a:hover, button:hover {
 		}
 	}
 	img {
+		display: inline;
 		max-width: 150px;
 	}
 }
