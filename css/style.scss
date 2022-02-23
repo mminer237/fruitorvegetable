@@ -242,7 +242,7 @@ footer {
 		margin: 10px;
 	}
 	a {
-		color: $lightish-secondary-color;
+		color: $light-secondary-color;
 	}
 }
 @media (prefers-color-scheme: dark) {
@@ -253,8 +253,15 @@ footer {
 	body {
 		background-color: $darkish-secondary-color;
 	}
+	a {
+		color: $lightish-secondary-color;
+	}
 	input[type="text"] {
 		background-color: $darkish-primary-color;
+		color: #FFF;
+	}
+	blockquote {
+		background-color: $darkish-secondary-color;
 	}
 	.vegetable .answer {
 		color: $lightish-secondary-color;
