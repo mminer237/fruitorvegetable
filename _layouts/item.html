@@ -131,7 +131,7 @@ item_question_title: true
 	{% else %}
 		{% assign is_fruit = false %}
 	{% endif %}
-	{% if page.culinarily contains "vegetable" or parent_culinary_type_names contains "vegetable" %}
+	{% if page.culinarily contains "vegetable" or parent_culinary_type_names contains "vegetable" or parent_culinary_type_names contains "unknown" %}
 		{% assign is_vegetable = true %}
 	{% else %}
 		{% assign is_vegetable = false %}
