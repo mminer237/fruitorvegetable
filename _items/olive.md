@@ -7,6 +7,8 @@ case_name: Costogue v. United States
 case_cite: 15 Ct. Cust. 55
 case_year: 1927
 case_dicta: false
+image: assets/images/olives.jpg
+image_caption: <a href="https://depositphotos.com/205456702/stock-photo-whole-green-table-olives-bowl.html">Photo from depositphotos.com</a>
 ---
 Olives botanically are drupes, a type of plants' fruit. This is because they are the part of the plant that contains the seed and the singular seed has a hard shell. This is botanically the same as fruits like [peaches]({% link _items/peach.md %}). However, one likely would not consider olives to be very similar to peaches. This is because [botanical definitions are not very useful for most people.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %})
 
