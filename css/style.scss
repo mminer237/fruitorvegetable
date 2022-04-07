@@ -7,8 +7,10 @@ $light-primary-color: hsl(353, 100%, 94%);
 $dark-secondary-color: hsl(84, 80%, 15%);
 $darkish-secondary-color: #39580a;
 $secondary-color: hsl(84, 80%, 31%);
+$lightishish-secondary-color: hsl(84, 75%, 39%);;
 $lightish-secondary-color: hsl(84, 70%, 69%);
 $light-secondary-color: hsl(84, 90%, 80%);
+$dark-grain-color: hsl(49, 86%, 37%);
 $grain-color: hsl(49, 82%, 63%);
 $nut-color: hsl(32, 72%, 50%);
 $black-hover-color: #333;
@@ -215,7 +217,7 @@ figcaption {
 		color: $darkish-secondary-color;
 	}
 	.grain .answer {
-		color: $grain-color;
+		color: $dark-grain-color;
 	}
 	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
 		color: $black-hover-color;
@@ -270,8 +272,11 @@ footer {
 	blockquote {
 		background-color: $darkish-secondary-color;
 	}
-	.vegetable .answer {
-		color: $lightish-secondary-color;
+	.type .vegetable .answer {
+		color: $lightishish-secondary-color;
+	}
+	.type .grain .answer {
+		color: $grain-color;
 	}
 	.answer:hover {
 		color: #FFF;
