@@ -23,14 +23,13 @@ regenerate: true
 			{% endif %}
 
 			{% assign culinary_type = site.types | where:"type", item.culinarily | first %}
-			{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-			{% if item.culinarily != "fruit" and culinary_type.parent_type != "fruit" %}
+			{% if item.culinarily != "fruit" and culinary_type.parent_type != "fruit" or item.culinarily == "nut" %}
 				{% assign is_not_fruit = true %}
 			{% else %}
 				{% assign is_not_fruit = false %}
 			{% endif %}
 
-			{% if is_fruit and is_not_fruit %}
+			{% if is_fruit and is_not_fruit and item.botanically != "nut" %}
 				<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 			{% endif %}
 		{% endfor %}

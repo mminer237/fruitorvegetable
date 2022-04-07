@@ -10,6 +10,7 @@ $secondary-color: hsl(84, 80%, 31%);
 $lightish-secondary-color: hsl(84, 70%, 69%);
 $light-secondary-color: hsl(84, 90%, 80%);
 $grain-color: hsl(49, 82%, 63%);
+$nut-color: hsl(32, 72%, 50%);
 $black-hover-color: #333;
 :root {
 	--text-color: black;
@@ -204,6 +205,9 @@ figcaption {
 	> div:not(:first-child) {
 		margin-top: 15px;
 	}
+	.nut .answer {
+		color: $nut-color;
+	}
 	.fruit .answer {
 		color: $primary-color;
 	}
@@ -213,7 +217,7 @@ figcaption {
 	.grain .answer {
 		color: $grain-color;
 	}
-	:not(.fruit):not(.vegetable):not(.grain)>.answer a:hover {
+	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
 		color: $black-hover-color;
 	}
 	

@@ -37,7 +37,11 @@ item_question_title: true
 	{% for culinary_type_name in page.culinarily %}
 		{% assign culinary_type = site.types | where:"type", culinary_type_name | first %}
 		{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-		{% assign parent_culinary_type_name = parent_culinary_type.type | split: 'XXXXX' %}
+		{% if culinary_type_name != "nut" %}
+			{% assign parent_culinary_type_name = parent_culinary_type.type | split: 'XXXXX' %}
+		{% else %}
+			{% assign parent_culinary_type_name = '' | split: 'XXXXX' %}
+		{% endif %}
 		{% assign parent_culinary_type_names = parent_culinary_type_names | concat: parent_culinary_type_name %}
 	{% endfor %}
 
@@ -90,7 +94,7 @@ item_question_title: true
 						{%- endif -%}
 					</a>
 					{% assign parent_culinary_type = site.types | where:"type", culinary_type.parent_type | first %}
-					{% if parent_culinary_type %}
+					{% if parent_culinary_type and culinary_type_name != "nut" %}
 						<span class="answer-parent">(A type of <a href="{{ parent_culinary_type.url }}">{{ parent_culinary_type.title | downcase }}</a>)</span>
 					{% endif %}
 				{% endfor %}
