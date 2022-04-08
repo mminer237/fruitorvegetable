@@ -6,6 +6,7 @@ legally: fruit
 case_name: Florida Lime & Avocado Growers, Inc. v. Paul
 case_cite: 373 U.S. 132
 case_year: 1963
+case_brief: 'https://matthewminer.name/law/briefs/Miscellaneous/Florida+Lime+amp+Avocado+Growers,+Inc.+v.+Paul'
 case_dicta: true
 image: assets/images/avocados.jpg
 ---
