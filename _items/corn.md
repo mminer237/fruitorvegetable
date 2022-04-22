@@ -1,5 +1,6 @@
 ---
 title: Corn
+article: false
 botanically: caryopsis
 culinarily: [vegetable, grain]
 image: assets/images/dent-corn.jpg

@@ -1,5 +1,6 @@
 ---
 title: Rice
+title: false
 botanically: caryopsis
 culinarily: grain
 ---

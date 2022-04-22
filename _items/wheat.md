@@ -1,5 +1,6 @@
 ---
 title: Wheat
+title: false
 botanically: caryopsis
 culinarily: grain
 ---

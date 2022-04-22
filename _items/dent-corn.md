@@ -1,5 +1,6 @@
 ---
 title: Dent Corn
+title: false
 botanically: caryopsis
 culinarily: grain
 image: assets/images/dent-corn.jpg
