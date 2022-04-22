@@ -7,9 +7,12 @@ $light-primary-color: hsl(353, 100%, 94%);
 $dark-secondary-color: hsl(84, 80%, 15%);
 $darkish-secondary-color: #39580a;
 $secondary-color: hsl(84, 80%, 31%);
+$lightishish-secondary-color: hsl(84, 75%, 39%);;
 $lightish-secondary-color: hsl(84, 70%, 69%);
 $light-secondary-color: hsl(84, 90%, 80%);
+$dark-grain-color: hsl(49, 86%, 37%);
 $grain-color: hsl(49, 82%, 63%);
+$nut-color: hsl(32, 72%, 50%);
 $black-hover-color: #333;
 :root {
 	--text-color: black;
@@ -43,7 +46,7 @@ header {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 	padding: 10px;
 	>* {
-		align-items: flex-end;
+		align-items: center;
 		display: inline-flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -54,13 +57,16 @@ header {
 	img {
 		// filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 		filter: drop-shadow(1px 1px 3px #000000c0);
+		flex: 0 1 100px;
+		max-width: 24vw;
 	}
 	$header-text-shadow: 2px 3px 6px rgba(0,0,0,.9);
 	h1 {
 		color: #EEE;
 		display: inline-block;
+		flex: 1 1 0;
 		margin: 0;
-		padding: 20px;
+		padding: 0 2vw;
 		text-shadow: $header-text-shadow;
 		vertical-align: top;
 	}
@@ -69,8 +75,8 @@ header {
 	}
 }
 h1 {
-	font-size: 60px;
-	line-height: 60px;
+	font-size: unquote("min(60px, 12vw)");
+	line-height: unquote("min(60px, 12vw)");
 }
 header, footer {
 	text-align: center;
@@ -201,6 +207,9 @@ figcaption {
 	> div:not(:first-child) {
 		margin-top: 15px;
 	}
+	.nut .answer {
+		color: $nut-color;
+	}
 	.fruit .answer {
 		color: $primary-color;
 	}
@@ -208,9 +217,9 @@ figcaption {
 		color: $darkish-secondary-color;
 	}
 	.grain .answer {
-		color: $grain-color;
+		color: $dark-grain-color;
 	}
-	:not(.fruit):not(.vegetable):not(.grain)>.answer a:hover {
+	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
 		color: $black-hover-color;
 	}
 	
@@ -263,8 +272,11 @@ footer {
 	blockquote {
 		background-color: $darkish-secondary-color;
 	}
-	.vegetable .answer {
-		color: $lightish-secondary-color;
+	.type .vegetable .answer {
+		color: $lightishish-secondary-color;
+	}
+	.type .grain .answer {
+		color: $grain-color;
 	}
 	.answer:hover {
 		color: #FFF;
