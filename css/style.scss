@@ -13,6 +13,8 @@ $light-secondary-color: hsl(84, 90%, 80%);
 $dark-grain-color: hsl(49, 86%, 37%);
 $grain-color: hsl(49, 82%, 63%);
 $nut-color: hsl(32, 72%, 50%);
+$light-vg-blend-color: #b1c038;
+$dark-vg-blend-color: #72740c;
 $black-hover-color: #333;
 :root {
 	--text-color: black;
@@ -219,6 +221,9 @@ figcaption {
 	.grain .answer {
 		color: $dark-grain-color;
 	}
+	.vegetable.grain .answer {
+		color: $dark-vg-blend-color;
+	}
 	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
 		color: $black-hover-color;
 	}
@@ -277,6 +282,9 @@ footer {
 	}
 	.type .grain .answer {
 		color: $grain-color;
+	}
+	.vegetable.grain .answer {
+		color: $light-vg-blend-color;
 	}
 	.answer:hover {
 		color: #FFF;
