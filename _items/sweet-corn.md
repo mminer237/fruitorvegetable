@@ -1,6 +1,6 @@
 ---
 title: Sweet Corn
-title: false
+article: false
 botanically: caryopsis
 culinarily: vegetable
 ---

@@ -1,5 +1,6 @@
 ---
 title: Olive
+article: an
 botanically: drupe
 culinarily: vegetable
 legally: fruit

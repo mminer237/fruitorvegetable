@@ -1,5 +1,6 @@
 ---
 title: Almond
+article: an
 botanically: seed
 culinarily: nut
 image: assets/images/almonds.png

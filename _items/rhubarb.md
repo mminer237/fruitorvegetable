@@ -1,6 +1,6 @@
 ---
 title: Rhubarb
-title: false
+article: false
 botanically: petiole
 culinarily: vegetable
 image: assets/images/rhubarb.jpg

@@ -1,5 +1,6 @@
 ---
 title: Orange
+article: an
 botanically: hesperidium
 culinarily: fruit
 ---

@@ -1,6 +1,6 @@
 ---
 title: Sushi
-title: false
+article: false
 ---
 Sushi is a food comprising many ingredients. It definitely contains [rice]({% link _items/rice.md %}), which is a [grain]({% link _types/grain.html %}). Usually it also contains seafood and sometimes various fruits or vegetables. Sea creatures are not vegetables. The typical makizushi type is wrapped in seaweed, which would be a vegetable.
 

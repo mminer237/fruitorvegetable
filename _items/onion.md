@@ -1,5 +1,6 @@
 ---
 title: Onion
+article: an
 botanically: bulb
 culinarily: vegetable
 image: assets/images/onions.jpg

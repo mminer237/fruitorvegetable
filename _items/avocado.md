@@ -1,5 +1,6 @@
 ---
 title: Avocado
+article: an
 botanically: berry
 culinarily: unknown
 legally: fruit

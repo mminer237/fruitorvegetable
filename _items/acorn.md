@@ -1,5 +1,6 @@
 ---
 title: Acorn
+article: an
 botanically: nut
 culinarily: nut
 image: assets/images/acorns.jpg

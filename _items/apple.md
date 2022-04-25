@@ -1,5 +1,6 @@
 ---
 title: Apple
+article: an
 botanically: pome
 culinarily: fruit
 image: assets/images/apples.jpg
