@@ -25,7 +25,11 @@
 			{{ page.article }}
 		{%- elsif page.article != false -%}
 			a 
-		{%- endif %} {{ page.title | xml_escape }} a Fruit or a Vegetable?{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
+		{%- endif %} {{ page.title | xml_escape }} {% if page.question -%}
+			{{ page.question }}?
+		{%- elsif page.question != false -%}
+			a Fruit or a Vegetable?
+		{%- endif %}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
 		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/css/style.css">
