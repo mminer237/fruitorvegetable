@@ -5,7 +5,7 @@ botanically: tuber
 culinarily: vegetable
 speakables: [".speakable"]
 ---
-The purple yam, commonly known as <span lang="tl">ube</span>, is a type of [yam]({% link _items/yam.md %}) commonly eaten as a dessert ingredient in Filipino cuisine. They make ube cake, ube donuts, ube cheesecake, and even ube donuts:
+The purple yam, commonly known as <span lang="tl">ube</span>, is a type of [yam]({% link _items/yam.md %}) commonly eaten as a dessert ingredient in Filipino cuisine. They make ube cake, ube donuts, ube cheesecake, ube donuts, and even [ube ice cream](https://news.baskinrobbins.com/blog/story-behind-ube-coconut-swirl):
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">There&#39;s something about our new Ube Coconut Swirl on a Friday &gt;&gt;&gt; 💜🥥🍥 <a href="https://t.co/ToTPBmHnKh">pic.twitter.com/ToTPBmHnKh</a></p>&mdash; Baskin-Robbins (@BaskinRobbins) <a href="https://twitter.com/BaskinRobbins/status/1515057373810810881?ref_src=twsrc%5Etfw">April 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 This is odd since, being a yam, it is a type of [tuber]({% link _types/tuber.html %}), not a [fruit]({% link _types/fruit.html %}). This is the botanical definition of fruit based on the fact that ube don't contain seeds.
