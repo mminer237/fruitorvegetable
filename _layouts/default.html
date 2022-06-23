@@ -30,7 +30,23 @@
 		{%- elsif page.question != false -%}
 			a Fruit or a Vegetable?
 		{%- endif %}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}</title>
-		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		<meta property="og:title" content="{% if page.url == '/' %}{{ site.title | xml_escape }}{% elsif layout.item_question_title %}Is {% if page.article -%}
+			{{ page.article }}
+		{%- elsif page.article != false -%}
+			a 
+		{%- endif %} {{ page.title | xml_escape }} {% if page.question -%}
+			{{ page.question }}?
+		{%- elsif page.question != false -%}
+			a Fruit or a Vegetable?
+		{%- endif %}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}">
+		{% if page.description %}<meta name="description" property="og:description" content="{{ page.description }}">{% endif %}
+		{% if page.image %}
+		{% assign firstImageCharacter = page.image | slice: 0 %}
+		<meta property="og:image" content="{% if firstImageCharacter == 'a' %}{{ site.url }}/{% endif %}{{ page.image }}">
+		{% else %}
+		<meta property="og:image" content="https://fruitorvegetable.science/assets/open-graph-preview.png">
+		<meta property="og:image:type" content="image/png">
+		{% endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/css/style.css">
 		{% for font in site.googleFonts %}
@@ -48,7 +64,13 @@
 				"@type": "WebPage",
 				"name": "{% if page.url == "/" %}{{ site.title | xml_escape }}{% else %}{{ page.title | xml_escape }}{% endif %}",
 				"url": "{{ site.url }}{{ page.url }}"
-				{%- if page.speakables -%}
+				{% if page.image -%}
+				, "primaryImageOfPage": {
+					"@type": "ImageObject",
+					"contentUrl": "{% if firstImageCharacter == 'a' %}{{ site.url }}/{% endif %}{{ page.image }}"
+				}
+				{%- endif %}
+				{% if page.speakables -%}
 				, "speakable": {
 					"@type": "SpeakableSpecification",
 					"cssSelector": [
