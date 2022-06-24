@@ -15,7 +15,7 @@ description: Fruits and vegetables have wildly varying amount of sugar in them. 
 		</tr>
 		{% assign sortedItems = site.items | sort: 'sugar' | reverse %}
 		{% for item in sortedItems -%}
-			{% if item.sugar -%}
+			{% if item.sugar and item.culinarily -%}
 				{%- assign parent_culinary_type_names = '' | split: '' %}
 				{%- for culinary_type_name in item.culinarily %}
 					{%- assign culinary_type = site.types | where: "type", culinary_type_name | first %}
