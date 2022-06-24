@@ -5,6 +5,7 @@ culinarily: vegetable
 image: assets/images/squashes.jpg
 image_caption: <a href="https://pixabay.com/photos/pumpkins-squash-produce-harvest-5572919/">Photo from Pixabay</a>
 speakables: [".speakable"]
+sugar: 2.2
 ---
 <span class="speakable">Squashes are a broad family of vegetables</span> which are the botanical [fruits]({% link _types/fruit.html %}) of the <span lang="la">Cucurbita</span> genus. This makes them part of the gourd family, and they are often just called "gourds" themselves. However, [you don't have to care about the botanical specificities.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %}) One notable type of squash is the [pumpkin]({% link _items/pumpkin.md %}), which is typically referred to separately.
 

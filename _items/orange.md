@@ -4,6 +4,7 @@ article: an
 botanically: hesperidium
 culinarily: fruit
 image: assets/images/oranges.jpg
+sugar: 9.2
 ---
 Oranges are one of America's staple fruits. [Orange juice is the most popular fruit juice in America by a large margin.](https://www.ers.usda.gov/data-products/chart-gallery/gallery/chart-detail/?chartId=85485) They're very, very juicy.
 

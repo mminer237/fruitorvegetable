@@ -1,0 +1,49 @@
+---
+layout: default
+title: Sugar Content Table
+description: Fruits and vegetables have wildly varying amount of sugar in them. Check out how much with this handy table!
+---
+
+<section>
+	<h2>{{ page.title }}</h2>
+	<p>Fruits and vegetables have wildly varying amount of sugar in them. This is one of the key determiners of whether something is a <a href="{% link _types/fruit.html %}">fruit</a> or not. In addition, avoiding sugar is quite a good goal for health purposes. For these reasons and others, I've prepared the following table. Data comes from <a href="https://fdc.nal.usda.gov/">the USDA FoodData Central</a>.</p>
+	<table>
+		<tr>
+			<th>Item Name</th>
+			<th>Classification</th>
+			<th>Sugar/100g</th>
+		</tr>
+		{% assign sortedItems = site.items | sort: 'sugar' | reverse %}
+		{% for item in sortedItems -%}
+			{% if item.sugar -%}
+				{%- assign parent_culinary_type_names = '' | split: '' %}
+				{%- for culinary_type_name in item.culinarily %}
+					{%- assign culinary_type = site.types | where: "type", culinary_type_name | first %}
+					{%- assign parent_culinary_type = site.types | where: "type", culinary_type.parent_type | first %}
+					{%- if culinary_type_name != "nut" %}
+						{% assign parent_culinary_type_name = parent_culinary_type.type | split: 'XXXXX' %}
+					{%- else %}
+						{%- assign parent_culinary_type_name = '' | split: 'XXXXX' %}
+					{%- endif %}
+					{%- assign parent_culinary_type_names = parent_culinary_type_names | concat: parent_culinary_type_name %}
+				{%- endfor %}
+
+				<tr>
+					<td><a href="{{ item.url }}">{{ item.title }}</a></td>
+					<td class="{% for culinary_type_name in item.culinarily %}{{ culinary_type_name }} {% endfor %} {{ parent_culinary_type_names | join: ' ' }}">
+						{% if item.culinarily and culinary_type %}
+							{% for culinary_type_name in item.culinarily %}
+								{% if forloop.first != true %}
+									&amp; 
+								{% endif %}
+								{% assign culinary_type = site.types | where: "type", culinary_type_name | first %}
+								<a href="{{ culinary_type.url }}">{{ culinary_type.title }}</a>
+							{% endfor %}
+						{% endif %}
+					</td>
+					<td>{{ item.sugar }}g</td>
+				</tr>
+			{%- endif %}
+		{%- endfor %}
+	</table>
+</section>

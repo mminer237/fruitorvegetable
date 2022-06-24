@@ -9,6 +9,7 @@ case_year: 1893
 case_brief: 'https://matthewminer.name/law/briefs/Miscellaneous/Nix+v.+Hedden'
 case_dicta: false
 image: assets/images/tomatoes-2.jpg
+sugar: 2.6
 ---
 > Intelligence is knowing a tomato is a fruit.  
 > Wisdom is knowing not to put it in a fruit salad.
@@ -17,7 +18,7 @@ Ah, tomatoes. [This is the most asked-about plant by a large margin.](https://tr
 
 It is often said that a tomato is technically a fruit and that people calling it a vegetable are repeating uneducated beliefs. However, these people themselves tend to just be parroting what they have heard. Botanically, a tomato is the fruit of the plant, however this does not make it wrong to call it a vegetable.
 
-If you had not heard of this debate and were eating tomatoes for the first time, you would intuitively think that it is a vegetable. It's not that sweet; it's more savory. It doesn't grow on a tree. It grows on a short, annual plant. They're often cooked into a sauce or alongside other savory foods, and never eaten raw like an [apple]({% link _items/apple.md %}). You put it in a regular salad with other vegetables, not a fruit salad. Doesn't that make it a vegetable? *Yes, it does.* In fact, [studies show that 70–78% percent of people recognize tomatoes as vegetables.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4160B03E914086279B19D2207D5E0691/S136898001000368Xa.pdf/div-class-title-the-meaning-of-fruits-and-vegetables-div.pdf#page=4) As the purpose of language is to communicate, "vegetable" is clearly the preferred word to convey the attributes of a tomato.
+If you had not heard of this debate and were eating tomatoes for the first time, you would intuitively think that it is a vegetable. [It's not very sweet]({% link _pages/sugar-content-table.html %}); it's more savory. It doesn't grow on a tree. It grows on a short, annual plant. They're often cooked into a sauce or alongside other savory foods, and never bitten into eaten raw like an [apple]({% link _items/apple.md %}) would be. You put it in a regular salad with other vegetables, not a fruit salad. Doesn't that make it a vegetable? *Yes, it does.* In fact, [studies show that 70–78% percent of people recognize tomatoes as vegetables.](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4160B03E914086279B19D2207D5E0691/S136898001000368Xa.pdf/div-class-title-the-meaning-of-fruits-and-vegetables-div.pdf#page=4) As the purpose of language is to communicate, "vegetable" is clearly the preferred word to convey the attributes of a tomato.
 
 This doesn't conflict with its botanical definition. A tomato is both a fruit *and* a vegetable, at least in some sense of the words. It just depends on the context. Technically, it's a berry even.
 

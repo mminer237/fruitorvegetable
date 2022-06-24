@@ -3,6 +3,7 @@ title: Watermelon
 botanically: berry
 culinarily: fruit
 image: assets/images/watermelons.jpg
+sugar: 6.2
 ---
 Watermelons are obviously fruits, not [vegetables]({% link _types/vegetable.html %}). Although they grow close to the ground, they are very sweet and very juicy. They're so juicy that they're named "watermelons". They're always eaten raw, ideally outside. People also attempt to flavor candy after watermelons.
 

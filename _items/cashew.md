@@ -2,6 +2,7 @@
 title: Cashew
 botanically: seed
 culinarily: nut
+sugar: 5.9
 ---
 Cashews are a common nut eaten around the world. Although they grow on trees, they are not [botanical nuts]({% link _types/nut.html %}#botanically). They grow as [drupes]({% link _types/drupe.html %}). The edible cashew "nut" is actually a [seed]({% link _types/seed.html %}) which grows inside a couple layers of irritating and toxic shells which must first be removed.
 

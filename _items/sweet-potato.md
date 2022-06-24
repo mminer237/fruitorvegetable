@@ -3,6 +3,7 @@ title: Sweet Potato
 botanically: tuberous-root
 culinarily: vegetable
 image: assets/images/sweet-potatoes.jpg
+sugar: 4.2
 ---
 Sweet potatoes are the main, tuberous roots of sweet potato plants that people eat. Although they are made into pies, they're colorful, and they are fairly sweet, they're still not [fruits]({% link _types/fruit.html %}). Something has to be a fruit botanically for it to be one culinarily, and sweet potatoes don't contain seeds. They are roots and therefore vegetables.
 

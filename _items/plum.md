@@ -3,6 +3,7 @@ title: Plum
 botanically: drupe
 culinarily: fruit
 image: assets/images/plums.jpg
+sugar: 9.9
 ---
 Plums are historically one of the most common fruits eaten around the world. Although less common today, they are still a familiar fruit to most people.
 

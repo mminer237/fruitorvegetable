@@ -5,6 +5,7 @@ culinarily: nut
 image: assets/images/hazelnuts.jpg
 image_caption: <a href="https://en.wikipedia.org/wiki/File:Hazelnuts.jpg">Photo by Fir0002</a> under <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>
 speakables: [".speakable"]
+sugar: 4.3
 ---
 Hazelnuts are the nuts of the hazel tree. I know, crazy, right? This is a very accurate name for them. <span class="speakable">Hazelnuts are nuts both botanically and culinarily.</span> Hazelnuts are each a whole fruit formed from its own ovary. There is a thin husk fibrous surrounding the nut, but the nut is a fruit botanically.
 

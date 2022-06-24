@@ -3,6 +3,7 @@ title: Banana
 botanically: berry
 culinarily: fruit
 image: assets/images/bananas.jpg
+sugar: 12.2
 ---
 Bananas are one of the most common fruits in America. They are fruits both botanically and culinarily, although both classifications could use a bit of discussion.
 

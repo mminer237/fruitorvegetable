@@ -2,6 +2,7 @@
 title: Raspberry
 botanically: aggregate-fruit
 culinarily: berry
+sugar: 4.4
 ---
 Raspberries are obviously fruits. They're very sweet, they're a common candy flavor (even if ascribed a false color), they're always eaten raw and/or in a dessert, they're colorful, they spoil quickly, they grow on bushes, and they're botanically fruits. There's nothing vegetably about them.
 

@@ -2,6 +2,7 @@
 title: Strawberry
 botanically: [aggregate-fruit, accessory-fruit]
 culinarily: berry
+sugar: 4.9
 ---
 Strawberries are pretty obviously fruits. They're really sweet, they're always eaten raw and/or in a dessert, they're colorful, and they're botanically fruits.
 

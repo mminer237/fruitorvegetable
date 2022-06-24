@@ -2,6 +2,7 @@
 title: Kiwi
 botanically: berry
 culinarily: fruit
+sugar: 9
 ---
 Kiwis are brown fuzzy fruits that are obviously fruits. They're very sweet, they're eaten raw, and they're botanically fruits. They're also even called kiwifruits in Australasia.
 

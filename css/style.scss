@@ -1,7 +1,7 @@
 ---
 ---
 $darkish-primary-color: hsl(350, 67%, 30%);
-$primary-color: #dc4d66;
+$primary-color: hsl(350, 67%, 58%);
 $lightish-primary-color: hsl(350, 67%, 80%);
 $light-primary-color: hsl(353, 100%, 94%);
 $dark-secondary-color: hsl(84, 80%, 15%);
@@ -193,6 +193,14 @@ ol::marker {
 .quote-signature::before {
 	content: "—";
 }
+table {
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+th, td {
+	padding: 4px 7px;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24);
+}
 figure {
 	margin: 0;
 }
@@ -209,21 +217,6 @@ figcaption {
 	> div:not(:first-child) {
 		margin-top: 15px;
 	}
-	.nut .answer {
-		color: $nut-color;
-	}
-	.fruit .answer {
-		color: $primary-color;
-	}
-	.vegetable .answer {
-		color: $darkish-secondary-color;
-	}
-	.grain .answer {
-		color: $dark-grain-color;
-	}
-	.vegetable.grain .answer {
-		color: $dark-vg-blend-color;
-	}
 	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
 		color: $black-hover-color;
 	}
@@ -239,6 +232,21 @@ figcaption {
 			font-size: 16px;
 		}
 	}
+}
+.nut .answer, .nut a {
+	color: $nut-color;
+}
+.fruit .answer, .fruit a {
+	color: $primary-color;
+}
+.vegetable .answer, .vegetable a {
+	color: $darkish-secondary-color;
+}
+.grain .answer, .grain a {
+	color: $dark-grain-color;
+}
+.vegetable.grain .answer, .vegetable.grain a {
+	color: $dark-vg-blend-color;
 }
 .case {
 	font-size: initial;
@@ -277,13 +285,13 @@ footer {
 	blockquote {
 		background-color: $darkish-secondary-color;
 	}
-	.type .vegetable .answer {
+	.vegetable .answer, .vegetable a {
 		color: $lightishish-secondary-color;
 	}
-	.type .grain .answer {
+	.grain .answer, .grain a {
 		color: $grain-color;
 	}
-	.vegetable.grain .answer {
+	.vegetable.grain .answer, .vegetable.grain a {
 		color: $light-vg-blend-color;
 	}
 	.answer:hover {

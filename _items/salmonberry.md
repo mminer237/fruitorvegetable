@@ -2,6 +2,7 @@
 title: Salmonberry
 botanically: aggregate-fruit
 culinarily: berry
+sugar: 3.7
 ---
 Salmonberries are fruits that are very similar to [raspberries]({% link _items/raspberry.md %}). The flavor is admittedly more bland, but they are still a bit sweet, juicy, and always eaten raw or in a dessert. They're still colorful, though they tend more towards orange where raspberries tend more towards purple. Everything about salmonberries still point to them being fruits, not vegetables. They spoil quickly, they grow on bushes, and they're botanically fruits.
 
