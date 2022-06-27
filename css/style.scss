@@ -258,14 +258,19 @@ figcaption {
 	font-style: italic;
 }
 footer {
+	align-items: center;
 	background-color: $primary-color;
 	color: #EEE;
-	padding: 10px;
-	div {
+	display: flex;
+	justify-content: center;
+	> *, div {
 		margin: 10px;
 	}
 	a {
 		color: $light-secondary-color;
+	}
+	img:hover {
+		filter: brightness(2.4);
 	}
 }
 @media (prefers-color-scheme: dark) {
