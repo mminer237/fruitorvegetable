@@ -4,6 +4,7 @@ botanically: berry
 culinarily: vegetable
 image: assets/images/plantains.jpg
 sugar: 2.3
+water: 61.1
 ---
 Plantains are a type of [banana]({% link _items/banana.md %}), but they are not typically eaten raw out of the peel like most bananas. They are often called cooking bananas in fact, because they are mostly used in cooking.
 

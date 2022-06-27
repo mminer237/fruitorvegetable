@@ -4,6 +4,7 @@ botanically: drupe
 culinarily: fruit
 image: assets/images/peaches.jpg
 sugar: 8.4
+water: 88.9
 ---
 Peaches are classic fruits. They are more specifically the most common [drupe]({% link _types/drupe.html %}) botanically. (I.e., they have a stone/pit.)
 

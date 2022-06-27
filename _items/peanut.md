@@ -3,6 +3,7 @@ title: Peanut
 botanically: legume
 culinarily: nut
 sugar: 4.7
+water: 6.5
 ---
 Peanuts are easily the most common nut eaten by Americans. Peanut butter is <em>the</em> nut butter, and is the most memorable creation of the great American of [George Washington Carver](https://www.tuskegee.edu/support-tu/george-washington-carver) and his prodigious peanut pioneering. Even plain-old peanuts are just a common snack at ball games, at home, or at Five Guys:
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Celebrating <a href="https://twitter.com/hashtag/NationalPeanutDay?src=hash&amp;ref_src=twsrc%5Etfw">#NationalPeanutDay</a>! 🥜 <a href="https://t.co/9NEZzPoGCc">pic.twitter.com/9NEZzPoGCc</a></p>&mdash; Five Guys (@FiveGuys) <a href="https://twitter.com/FiveGuys/status/1437446014135320580?ref_src=twsrc%5Etfw">September 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

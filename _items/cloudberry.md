@@ -2,6 +2,7 @@
 title: Cloudberry
 botanically: aggregate-fruit
 culinarily: berry
+water: 87
 ---
 Cloudberries are small fruits that grow in the northern regions of the world like the Nordic countries, Russia, and in and around Canada. They have sweet or tart flavor and grow on a bush, like other berries. They're eaten raw or made into fruit products like jams or tarts. They're quite obviously botanically fruits. There's nothing vegetably about them.
 

@@ -6,6 +6,7 @@ culinarily: nut
 image: assets/images/acorns.jpg
 image_caption: <a href="https://pxhere.com/en/photo/1061632">Photo from PxHere</a>
 speakables: [".speakable"]
+water: 27.9
 sugar: 0
 ---
 <span class="speakable">Acorns are both botanically and culinarily nuts.</span> Botanically, they have single seed in a shell which doesn't break open along a set line, making them nuts scientifically.

@@ -3,6 +3,7 @@ title: Blackberry
 botanically: aggregate-fruit
 culinarily: berry
 sugar: 4.9
+water: 88.2
 ---
 Blackberries are…black…berries. This makes them fruits.
 

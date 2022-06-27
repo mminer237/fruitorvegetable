@@ -4,6 +4,7 @@ botanically: berry
 culinarily: fruit
 image: assets/images/grapes.jpg
 sugar: 16.2
+water: 81.3
 ---
 Grapes are fruits by both definitions. While most grapes we eat now have been bred to not have seeds, they still come from the ovaries and are botanically fruits. They are obviously culinarily fruits, as they are super sweet and delicious.
 

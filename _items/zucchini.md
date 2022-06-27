@@ -5,6 +5,7 @@ culinarily: vegetable
 image: assets/images/zucchinis.jpg
 speakables: [".speakable"]
 sugar: 2.5
+water: 94.8
 ---
 Zucchinis are very similar to [cucumbers](% link _items/cucumber.md %}). While they taste a bit different, they are both long green fruits. The zucchini just has stemmy bit on the end. It is actually a type of [[squash]({% link _items/squash.md %})].
 

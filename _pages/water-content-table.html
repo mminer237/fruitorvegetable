@@ -1,0 +1,49 @@
+---
+layout: default
+title: Water Content Table
+description: Many fruits and vegetables are super juicy while others are typically more dry. Check and compare fruit and vegetables with this table.
+---
+
+<section>
+	<h2>{{ page.title }}</h2>
+	<p>Many <a href="{% link _types/fruit.html %}">fruits</a> and <a href="{% link _types/vegetable.html %}">vegetables</a> are super juicy while <a href="{% link _types/grain.html %}">grains</a> and <a href="{% link _types/nut.html %}">nuts</a> are typically more dry. Check and compare items with this table. Data comes mostly from <a href="https://fdc.nal.usda.gov/">the USDA FoodData Central</a>.</p>
+	<table>
+		<tr>
+			<th>Item Name</th>
+			<th>Classification</th>
+			<th>Percentage Water</th>
+		</tr>
+		{% assign sortedItems = site.items | sort: 'water' | reverse %}
+		{% for item in sortedItems -%}
+			{% if item.water and item.culinarily -%}
+				{%- assign parent_culinary_type_names = '' | split: '' %}
+				{%- for culinary_type_name in item.culinarily %}
+					{%- assign culinary_type = site.types | where: "type", culinary_type_name | first %}
+					{%- assign parent_culinary_type = site.types | where: "type", culinary_type.parent_type | first %}
+					{%- if culinary_type_name != "nut" %}
+						{% assign parent_culinary_type_name = parent_culinary_type.type | split: 'XXXXX' %}
+					{%- else %}
+						{%- assign parent_culinary_type_name = '' | split: 'XXXXX' %}
+					{%- endif %}
+					{%- assign parent_culinary_type_names = parent_culinary_type_names | concat: parent_culinary_type_name %}
+				{%- endfor %}
+
+				<tr>
+					<td><a href="{{ item.url }}">{{ item.title }}</a></td>
+					<td class="{% for culinary_type_name in item.culinarily %}{{ culinary_type_name }} {% endfor %} {{ parent_culinary_type_names | join: ' ' }}">
+						{% if item.culinarily and culinary_type %}
+							{% for culinary_type_name in item.culinarily %}
+								{% if forloop.first != true %}
+									&amp; 
+								{% endif %}
+								{% assign culinary_type = site.types | where: "type", culinary_type_name | first %}
+								<a href="{{ culinary_type.url }}">{{ culinary_type.title }}</a>
+							{% endfor %}
+						{% endif %}
+					</td>
+					<td>{{ item.water }}%</td>
+				</tr>
+			{%- endif %}
+		{%- endfor %}
+	</table>
+</section>

@@ -11,6 +11,7 @@ case_brief: 'https://matthewminer.name/law/briefs/Miscellaneous/Florida+Lime+amp
 case_dicta: true
 image: assets/images/avocados.jpg
 sugar: 0.7
+water: 73.2
 ---
 Avocados are definitely fruits botanically. They are the ripened ovaries of the avocado tree and contain seeds. Interestingly, they are technically a <a href="{% link _types/berry.html %}">berry</a> instead of a <a href="{% link _types/drupe.html %}">drupe</a> because there is a *very* thin endocarp (third layer of fruit) around the stone. [This has no practical effect for you.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %})
 

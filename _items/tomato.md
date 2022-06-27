@@ -10,6 +10,7 @@ case_brief: 'https://matthewminer.name/law/briefs/Miscellaneous/Nix+v.+Hedden'
 case_dicta: false
 image: assets/images/tomatoes-2.jpg
 sugar: 2.6
+water: 94.5
 ---
 > Intelligence is knowing a tomato is a fruit.  
 > Wisdom is knowing not to put it in a fruit salad.

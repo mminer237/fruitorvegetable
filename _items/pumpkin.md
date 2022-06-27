@@ -6,6 +6,7 @@ image: assets/images/pumpkins.jpg
 image_caption: <a href="https://www.flickr.com/photos/danielle_scott/5048428506">Photo by Danielle Scott</a>
 speakables: [".speakable"]
 sugar: 2.8
+water: 91.6
 ---
 Pumpkins are admittedly closer than most. They are botanically a type of [berry]({% link _types/berry.html %}) called a "[pepo]({% link _types/pepo.html %})" due to their seed-bearing fleshiness and hard outer rinds. This means that pumpkins are fruits to botanists because they are the "fruits" of pumpkin plants, but it doesn't mean that they are actually "fruits" as we typically use the word. Their culinary classification requires a bit more discussion.
 

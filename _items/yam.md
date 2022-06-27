@@ -5,6 +5,7 @@ culinarily: vegetable
 image: assets/images/yams.jpg
 image_caption: <a href="https://commons.wikimedia.org/wiki/File:Tubbers_of_yam_from_Damongo.jpg">Photo by Shahadusadik, CC BY-SA 4.0</a>
 sugar: 0.5
+water: 69.6
 ---
 Yams are a type of tuber that people eat. They're not [fruits]({% link _types/fruit.html %}) though—yams don't contain seeds. They are tubers and therefore vegetables.
 

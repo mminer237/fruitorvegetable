@@ -6,6 +6,7 @@ culinarily: vegetable
 image: assets/images/rhubarb.jpg
 image_caption: <a href="https://flic.kr/p/4V2GmK">Photo by Emma Forsberg</a>
 sugar: 1.1
+water: 93.6
 ---
 Rhubarb is a leaf stalk that we eat. Most people have probably only eaten it in pies or tarts, and thus might consider it a type of fruit. It is after all almost always prepared in desserts with copious amounts of sugar, and often with fruits like [strawberries]({% link _items/strawberry.md %}). However, this is not the natural state of rhubarb.
 
