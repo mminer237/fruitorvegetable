@@ -14,7 +14,7 @@ sugar: 0.7
 ---
 Avocados are definitely fruits botanically. They are the ripened ovaries of the avocado tree and contain seeds. Interestingly, they are technically a <a href="{% link _types/berry.html %}">berry</a> instead of a <a href="{% link _types/drupe.html %}">drupe</a> because there is a *very* thin endocarp (third layer of fruit) around the stone. [This has no practical effect for you.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %})
 
-Culinarily, they're...well...I'm honestly not sure. I would personally think of them more as a vegetable because they're not sweet and they're more substantive. I would never eat an avocado for a fruity snack. They're high in fat, not sugar.
+Culinarily, they're...well...I'm honestly not sure. I would personally think of them more as a vegetable because they're not sweet and they're more substantive. I would never eat an avocado for a fruity snack. They're high in fat, [not sugar]({% link _pages/sugar-content-table.html %}). Guacamole is typically paired well with salsa and other savory dishes, not desserts and fruity things.
 
 However, this view isn't unanimous. Apparently some people do eat them as a fruit or in a fruit salad. This is especially true in Africa, so...who knows. ¯\\\_(ツ)_/¯  
 
