@@ -194,6 +194,9 @@ ol::marker {
 .quote-signature::before {
 	content: "—";
 }
+ul {
+	list-style-image: url(/assets/tomato-bullet.png);
+}
 table {
 	border-collapse: separate;
 	border-spacing: 5px;
