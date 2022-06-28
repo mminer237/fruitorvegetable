@@ -4,7 +4,7 @@ article: false
 botanically: petiole
 culinarily: vegetable
 image: assets/images/rhubarb.jpg
-image_caption: <a href="https://flic.kr/p/4V2GmK">Photo by Emma Forsberg</a>
+image_caption: <a href="https://flic.kr/p/4V2GmK">Photo by Emma Forsberg</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
 sugar: 1.1
 water: 93.6
 ---

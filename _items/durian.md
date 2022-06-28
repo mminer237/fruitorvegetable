@@ -3,7 +3,7 @@ title: Durian
 botanically: capsule
 culinarily: fruit
 image: assets/images/durians.jpg
-image_caption: <a href="https://www.flickr.com/photos/fchungcw/15177564022">Photo by Francis Chung</a>
+image_caption: <a href="https://www.flickr.com/photos/fchungcw/15177564022">Photo by Francis Chung</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
 water: 65
 ---
 Durians are very unique fruits. While they are botanically fruits, they are an odd capsule in that they are quite large, less dry, and very fleshy. They are also culinarily fruits, yet they are very different than fruits we typically eat in the west. They are much more creamy than juicy, and have much more complex flavor than just the fruity sweetness most fruits offer. Durians have some sweetness, yet they are also a bit bitter and have complicated savory flavors mixed in. Its main flavors have been described as a mixture of cheese, garlic, and caramel. Other flavors included are almonds, chives, onions, butterscotch, and wine.

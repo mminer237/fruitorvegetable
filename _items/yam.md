@@ -3,7 +3,7 @@ title: Yam
 botanically: tuber
 culinarily: vegetable
 image: assets/images/yams.jpg
-image_caption: <a href="https://commons.wikimedia.org/wiki/File:Tubbers_of_yam_from_Damongo.jpg">Photo by Shahadusadik, CC BY-SA 4.0</a>
+image_caption: <a href="https://commons.wikimedia.org/wiki/File:Tubbers_of_yam_from_Damongo.jpg">Photo by Shahadusadik</a> under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 sugar: 0.5
 water: 69.6
 ---

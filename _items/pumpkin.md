@@ -3,7 +3,7 @@ title: Pumpkin
 botanically: pepo
 culinarily: vegetable
 image: assets/images/pumpkins.jpg
-image_caption: <a href="https://www.flickr.com/photos/danielle_scott/5048428506">Photo by Danielle Scott</a>
+image_caption: <a href="https://www.flickr.com/photos/danielle_scott/5048428506">Photo by Danielle Scott</a> under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
 speakables: [".speakable"]
 sugar: 2.8
 water: 91.6
