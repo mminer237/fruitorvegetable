@@ -260,6 +260,12 @@ figcaption {
 .case-name {
 	font-style: italic;
 }
+.see-also {
+	background-color: $light-secondary-color;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+	margin: -3px;
+	padding: 6px 8px;
+}
 footer {
 	align-items: center;
 	background-color: $primary-color;
@@ -305,5 +311,8 @@ footer {
 	}
 	.answer:hover {
 		color: #FFF;
+	}
+	.see-also {
+		background-color: $darkish-secondary-color;
 	}
 }
