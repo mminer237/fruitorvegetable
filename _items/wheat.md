@@ -3,6 +3,8 @@ title: Wheat
 article: false
 botanically: caryopsis
 culinarily: grain
+image: assets/images/wheat.jpg
+image_caption: <a href="https://pxhere.com/en/photo/1157493">Photo from PxHere</a>
 sugar: 0.3
 water: 12
 ---
