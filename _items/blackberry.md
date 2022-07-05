@@ -2,6 +2,7 @@
 title: Blackberry
 botanically: aggregate-fruit
 culinarily: berry
+image: assets/images/blackberries.jpg
 sugar: 4.9
 water: 88.2
 ---

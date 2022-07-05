@@ -2,8 +2,7 @@
 title: 'Cucumber'
 botanically: pepo
 culinarily: vegetable
-image: assets/images/cucumbers.jpg
-image_caption: <a href="https://www.pikrepo.com/fyfjj/baskets-of-cucumbers">Photo from Pikrepo</a>
+image: assets/images/cucumbers-2.jpg
 speakables: [".speakable"]
 sugar: 1.7
 water: 95.2
