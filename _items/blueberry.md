@@ -2,6 +2,7 @@
 title: 'Blueberry'
 botanically: berry
 culinarily: berry
+image: assets/images/blueberries.jpg
 sugar: 10
 water: 84.2
 ---
