@@ -5,6 +5,7 @@ culinarily: vegetable
 image: assets/images/jalapeños.jpg
 sugar: 4.1
 water: 91.7
+specific_gravity: 0.5
 ---
 Jalapeños are one of the most popular types of chili peppers. They have a medium amount of heat and a good flavor that works well in many dishes.
 
