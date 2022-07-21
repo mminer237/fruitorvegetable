@@ -1,6 +1,5 @@
 ---
 title: Ber
-article: false
 botanically: drupe
 culinarily: fruit
 sugar: 9
