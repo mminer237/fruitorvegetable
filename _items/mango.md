@@ -5,7 +5,6 @@ culinarily: fruit
 image: assets/images/mangoes.jpg
 sugar: 13.7
 water: 83.5
-specific_gravity: 1.15
 ---
 Mangoes are a tropical fruit grown around the world. Botanically they are a type of fruit called a [drupe]({% link _types/drupe.html %}) because they have a stone/pit.
 

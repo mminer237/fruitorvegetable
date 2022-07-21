@@ -6,7 +6,6 @@ culinarily: vegetable
 image: assets/images/sweet-corn.jpg
 sugar: 6.3
 water: 76
-specific_gravity: 0.61
 ---
 Sweet corn is probably what most people think of as "[corn]({% link _items/corn.md %})." It is a very small percentage of the corn you see growing, but it's the only corn that you will ever eat whole. It is very versatile. You can eat it as loose corn, corn-on-the-cob, creamed corn, scalloped corn, corn fritters, corn chowder, corn pudding, etc. And they're all delicious.
 

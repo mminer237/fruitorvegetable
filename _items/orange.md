@@ -6,7 +6,6 @@ culinarily: fruit
 image: assets/images/oranges.jpg
 sugar: 9.2
 water: 87.1
-specific_gravity: 0.82
 ---
 Oranges are one of America's staple fruits. [Orange juice is the most popular fruit juice in America by a large margin.](https://www.ers.usda.gov/data-products/chart-gallery/gallery/chart-detail/?chartId=85485) They're very, very juicy.
 

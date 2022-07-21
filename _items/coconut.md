@@ -7,7 +7,6 @@ image_caption: <a href="https://flickr.com/photos/theocrazzolara/35591240724">Ph
 speakables: [".speakable"]
 sugar: 6.2
 water: 47
-specific_gravity: 0.61
 ---
 Coconuts can be a rather confusing fruit. At first look, they could easily be thought a [nut]({% link _types/nut.html %}). They have an extremely hard and thick outer shell, trees seem to just sprout from that one "nut", and "coconut" literally has the word "nut" in the name.
 

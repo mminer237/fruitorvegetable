@@ -7,7 +7,6 @@ image_caption: <a href="https://www.flickr.com/photos/quinet/27300837486">Photo 
 speakables: [".speakable"]
 sugar: 1.7
 water: 59.7
-specific_gravity: 0.63
 ---
 Cassava roots are a type of tuberous root that many people eat. Although cassavas are rare in most developed nations, they are a major food staple throughout sub-Saharan Africa and Southeast Asia due to their hardiness and caloric content. [It's estimated that 10% of the world relies on cassavas as their primary food staple.](https://www.fao.org/3/i3278e/i3278e.pdf#page=5) It's clearly an important plant.
 
