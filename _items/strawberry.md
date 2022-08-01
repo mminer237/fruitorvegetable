@@ -2,6 +2,8 @@
 title: Strawberry
 botanically: [aggregate-fruit, accessory-fruit]
 culinarily: berry
+image: assets/images/strawberries.jpg
+image_caption: <a href="https://flic.kr/p/bDcqKE">Photo by Fried Dough</a>
 sugar: 4.9
 water: 91
 ---
