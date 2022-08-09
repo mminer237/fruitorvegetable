@@ -1,7 +1,12 @@
 <footer>
 	<div>
-		<div>Made by <a href="{{ site.author.site }}">{{ site.author.name }}</a></div>
-		<div><a href="/privacy-policy">Privacy Policy</a></div>
+		<div>
+			<div>Made by <a href="{{ site.author.site }}">{{ site.author.name }}</a></div>
+			<div><a href="/privacy-policy">Privacy Policy</a></div>
+		</div>
+		<a href="{{ site.sourceUrl }}"><img src="/assets/GitHub-Mark.svg" alt="GitHub Logo" title="View Source Code on GitHub" width="40px"></a>
 	</div>
-	<a href="{{ site.sourceUrl }}"><img src="/assets/GitHub-Mark.svg" alt="GitHub Logo" title="View Source Code on GitHub" width="40px"></a>
+	{% if page.amazonAd %}
+	<p style="margin: -3px 0 17px; opacity: 90%;">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
+	{% endif %}
 </footer>
