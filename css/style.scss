@@ -241,11 +241,14 @@ figcaption {
 .nut .answer, .nut a {
 	color: $nut-color;
 }
-.fruit .answer, .fruit a {
+.fruit .answer, .fruit a, .fruit.vegetable a[href*="fruit"] {
 	color: $primary-color;
 }
-.vegetable .answer, .vegetable a {
+.vegetable .answer, .vegetable a, .fruit.vegetable a[href*="vegetable"] {
 	color: $darkish-secondary-color;
+}
+.fruit.vegetable .answer {
+	color: unset !important;
 }
 .grain .answer, .grain a {
 	color: $dark-grain-color;
@@ -303,7 +306,7 @@ footer {
 	blockquote {
 		background-color: $darkish-secondary-color;
 	}
-	.vegetable .answer, .vegetable a {
+	.vegetable .answer, .vegetable a, .fruit.vegetable a[href*="vegetable"] {
 		color: $lightishish-secondary-color;
 	}
 	.grain .answer, .grain a {

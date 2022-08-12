@@ -8,7 +8,7 @@ sugar: 16.3
 water: 79.1
 amazonAd: true
 ---
-Figs are fruits. This is obvious from their sweetness. [They're *the sweetest* fruits, in fact, with over double the sugar of any vegetable.]({% link _pages/sugar-content-table.html %})
+Figs are fruits. This is obvious from their sweetness. [They're one of *the sweetest* fruits, in fact, with over double the sugar of any vegetable.]({% link _pages/sugar-content-table.html %})
 
 Honestly, I've only ever had figs in these cookies:
 
