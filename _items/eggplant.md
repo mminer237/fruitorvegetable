@@ -3,8 +3,8 @@ title: Eggplant
 botanically: berry
 culinarily: vegetable
 image: assets/images/eggplants.jpg
-sugar: 
-water: 
+sugar: 3.5
+water: 92.3
 ---
 Eggplants, or aubergines for the Europeans, are the colorful fruits of the plant of the same names. They are large, purple, and egg-shaped—hence the name. Botanically, they are berries because they are fleshy and contain seeds but not pits.
 
