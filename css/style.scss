@@ -13,6 +13,7 @@ $light-secondary-color: hsl(84, 90%, 80%);
 $dark-grain-color: hsl(49, 86%, 37%);
 $grain-color: hsl(49, 82%, 63%);
 $nut-color: hsl(32, 72%, 50%);
+$spice-color: hsl(20, 72%, 47%);
 $light-vg-blend-color: #b1c038;
 $dark-vg-blend-color: #72740c;
 $black-hover-color: #333;
@@ -222,7 +223,7 @@ figcaption {
 	> div:not(:first-child) {
 		margin-top: 15px;
 	}
-	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer a:hover {
+	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer:not(.spice)>.answer a:hover {
 		color: $black-hover-color;
 	}
 	
@@ -241,13 +242,16 @@ figcaption {
 .nut .answer, .nut a {
 	color: $nut-color;
 }
-.fruit .answer, .fruit a, .fruit.vegetable a[href*="fruit"] {
+.spice .answer, .spice a, .spice a[href*="spice"] {
+	color: $spice-color;
+}
+.fruit .answer, .fruit a, .fruit a[href*="fruit"] {
 	color: $primary-color;
 }
-.vegetable .answer, .vegetable a, .fruit.vegetable a[href*="vegetable"] {
+.vegetable .answer, .vegetable a, .vegetable a[href*="vegetable"] {
 	color: $darkish-secondary-color;
 }
-.fruit.vegetable .answer {
+.fruit.vegetable .answer, .vegetable.spice .answer {
 	color: unset !important;
 }
 .grain .answer, .grain a {
@@ -306,7 +310,7 @@ footer {
 	blockquote {
 		background-color: $darkish-secondary-color;
 	}
-	.vegetable .answer, .vegetable a, .fruit.vegetable a[href*="vegetable"] {
+	.vegetable .answer, .vegetable a, .vegetable a[href*="vegetable"] {
 		color: $lightishish-secondary-color;
 	}
 	.grain .answer, .grain a {
