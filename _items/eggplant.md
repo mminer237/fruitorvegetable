@@ -1,5 +1,6 @@
 ---
 title: Eggplant
+article: an
 botanically: berry
 culinarily: vegetable
 image: assets/images/eggplants.jpg
