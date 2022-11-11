@@ -1,5 +1,6 @@
 ---
-title: 'Tomato'
+title: Tomato
+description: Tomatoes are the quintessential "fruit or vegetable" item. It seems common knowledge that they are vegetables. Why do people insist they are fruits?
 botanically: berry
 culinarily: vegetable
 legally: vegetable
@@ -14,8 +15,9 @@ water: 94.5
 ---
 > Intelligence is knowing a tomato is a fruit.  
 > Wisdom is knowing not to put it in a fruit salad.
+> <div class="quote-signature"><i>Miles Kington in <i>The Independent</i> (March 28, 2003)</i></div>
 
-Ah, tomatoes. [This is the most asked-about plant by a large margin.](https://trends.google.com/trends/explore?geo=US&q=is%20corn%20a%20fruit%20or%20a%20vegetable,is%20a%20tomato%20a%20fruit%20or%20a%20vegetable,is%20a%20pumpkin%20a%20fruit%20or%20a%20vegetable,is%20a%20cucumber%20a%20fruit%20or%20a%20vegetable,is%20an%20avocado%20a%20fruit%20or%20a%20vegetable) It seems everyone is confused about whether a tomato is a fruit or a vegetable.
+Tomatoes are the quintessential "fruit or vegetable" item. They seem to have spawned the idea that botany must dictate culinary terms. I am not sure where this debate started or why tomatoes have been singled out (perhaps because they are red and juicy), but as a result, [they are the most asked-about plant by a large margin.](https://trends.google.com/trends/explore?geo=US&q=is%20corn%20a%20fruit%20or%20a%20vegetable,is%20a%20tomato%20a%20fruit%20or%20a%20vegetable,is%20a%20pumpkin%20a%20fruit%20or%20a%20vegetable,is%20a%20cucumber%20a%20fruit%20or%20a%20vegetable,is%20an%20avocado%20a%20fruit%20or%20a%20vegetable) It seems everyone is confused about whether a tomato is a fruit or a vegetable.
 
 It is often said that a tomato is technically a fruit and that people calling it a vegetable are repeating uneducated beliefs. However, these people themselves tend to just be parroting what they have heard. Botanically, a tomato is the fruit of the plant, however this does not make it wrong to call it a vegetable.
 
@@ -25,4 +27,4 @@ This doesn't conflict with its botanical definition. A tomato is both a fruit *a
 
 However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. [This has no relevance for 99% of people.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %}) The botanical definition does not have any influence in the world of food. Unless you are a scientist studying plants, the botanical definitions of "fruit" and berry" are useless for you. You are eating tomatoes, not growing them. A tomato is a vegetable.
 
-If you call tomatoes fruits just because they are the seed-bearing part of the tomato plant, there are [many other vegetables you would have to miscategorize under such logic]({% link _pages/confusing-items.html %}). [Cucumbers]({% link _items/cucumber.md %}), [olives]({% link _items/olive.md %}), [pumpkins]({% link _items/pumpkin.md %}), [corn]({% link _items/corn.md %}), and many more vegetables all comprise the fruit of plants. But to call such things fruits would make the word "fruit" lose a large part of its meaning. Fruit has a culinary meaning too, like "vegetable" is a culinary term. Mixing botanical and culinary terms does not make sense. It just confuses people, which is the opposite of what language is supposed to do.
+If you call tomatoes fruits just because they are the seed-bearing part of the tomato plant, there are [many other vegetables you would have to miscategorize under such logic]({% link _pages/confusing-items.html %}). It is illogical to single out only tomatoes to insist on using botanical definitions. [Cucumbers]({% link _items/cucumber.md %}), [olives]({% link _items/olive.md %}), [pumpkins]({% link _items/pumpkin.md %}), [corn]({% link _items/corn.md %}), and many more vegetables all comprise the fruit of plants. But to call such things fruits would make the word "fruit" lose a large part of its meaning. Fruit has a culinary meaning too, like "vegetable" is a culinary term. Mixing botanical and culinary terms does not make sense. It just confuses people, which is the opposite of what language is supposed to do.

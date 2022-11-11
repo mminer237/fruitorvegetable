@@ -39,7 +39,7 @@
 		{%- elsif page.question != false -%}
 			a Fruit or a Vegetable?
 		{%- endif %}{% else %}{{ page.title | xml_escape }} – {{ site.title | xml_escape }}{% endif %}">
-		{% if page.description %}<meta name="description" property="og:description" content="{{ page.description }}">{% endif %}
+		{% if page.description %}<meta name="description" property="og:description" content="{{ page.description | xml_escape }}">{% endif %}
 		{% if page.image %}
 		{% assign firstImageCharacter = page.image | slice: 0 %}
 		<meta property="og:image" content="{% if firstImageCharacter == 'a' %}{{ site.url }}/{% endif %}{{ page.image }}">
