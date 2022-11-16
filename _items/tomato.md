@@ -10,6 +10,7 @@ case_year: 1893
 case_brief: 'https://matthewminer.name/law/briefs/Miscellaneous/Nix+v.+Hedden'
 case_dicta: false
 image: assets/images/tomatoes-2.jpg
+speakables: [".speakable"]
 sugar: 2.6
 water: 94.5
 ---
@@ -25,6 +26,6 @@ If you had not heard of this debate and were eating tomatoes for the first time,
 
 This doesn't conflict with its botanical definition. A tomato is both a fruit *and* a vegetable, at least in some sense of the words. It just depends on the context. Technically, it's a berry even.
 
-However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. [This has no relevance for 99% of people.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %}) The botanical definition does not have any influence in the world of food. Unless you are a scientist studying plants, the botanical definitions of "fruit" and berry" are useless for you. You are eating tomatoes, not growing them. A tomato is a vegetable.
+However, it is a berry only by virtue of the obscure botanical definition of "berry," meaning it came from an ovary, is fleshy, and doesn't split open to spread its seeds. [This has no relevance for 99% of people.]({% link _pages/you-dont-have-to-care-about-botanical-definitions.html %}) The botanical definition does not have any influence in the world of food. Unless you are a scientist studying plants, the botanical definitions of "fruit" and berry" are useless for you. You are eating tomatoes, not growing them. <span class="speakable">A tomato is a vegetable.</span>
 
 If you call tomatoes fruits just because they are the seed-bearing part of the tomato plant, there are [many other vegetables you would have to miscategorize under such logic]({% link _pages/confusing-items.html %}). It is illogical to single out only tomatoes to insist on using botanical definitions. [Cucumbers]({% link _items/cucumber.md %}), [olives]({% link _items/olive.md %}), [pumpkins]({% link _items/pumpkin.md %}), [corn]({% link _items/corn.md %}), and many more vegetables all comprise the fruit of plants. But to call such things fruits would make the word "fruit" lose a large part of its meaning. Fruit has a culinary meaning too, like "vegetable" is a culinary term. Mixing botanical and culinary terms does not make sense. It just confuses people, which is the opposite of what language is supposed to do.

@@ -1,5 +1,6 @@
 ---
 title: Pumpkin
+description: Pumpkins grow on a vine and are a common dessert flavor, but may not seem like the typical fruit. Are pumpkins fruits or are they vegetables?
 botanically: pepo
 culinarily: vegetable
 image: assets/images/pumpkins.jpg
