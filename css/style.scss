@@ -7,19 +7,42 @@ $light-primary-color: hsl(353, 100%, 94%);
 $dark-secondary-color: hsl(84, 80%, 15%);
 $darkish-secondary-color: #39580a;
 $secondary-color: hsl(84, 80%, 31%);
-$lightishish-secondary-color: hsl(84, 75%, 39%);;
+$lightishish-secondary-color: hsl(84, 75%, 39%);
 $lightish-secondary-color: hsl(84, 70%, 69%);
 $light-secondary-color: hsl(84, 90%, 80%);
 $dark-grain-color: hsl(49, 86%, 37%);
-$grain-color: hsl(49, 82%, 63%);
-$nut-color: hsl(32, 72%, 50%);
-$spice-color: hsl(20, 72%, 47%);
-$light-vg-blend-color: #b1c038;
+$fruit-background-color: hsl(350, 65%, 50%);
+$fruit-text-color: #FDF1F2;
+$vegetable-background-color: $darkish-secondary-color;
+$vegetable-text-color: hsl(84, 52%, 69%);
+$grain-background-color: hsl(49, 82%, 63%);
+$grain-text-color: darken($grain-background-color, 32%);
+$nut-background-color: hsl(32, 72%, 50%);
+$nut-text-color: lighten($nut-background-color, 34%);
+$spice-background-color: hsl(20, 72%, 47%);
+$spice-text-color: lighten($spice-background-color, 40%);
 $dark-vg-blend-color: #72740c;
+$light-vg-blend-color: #b1c038;
+$vg-blend-text-color: hsl(61, 51%, 56%);
 $black-hover-color: #333;
+
+$types: "fruit", "vegetable", "grain", "nut", "spice";
+
 :root {
 	--text-color: black;
 	--text-background-color: white;
+	--fruit-background-color: #{$fruit-background-color};
+	--fruit-text-color: #{$fruit-text-color};
+	--vegetable-background-color: #{$vegetable-background-color};
+	--vegetable-text-color: #{$vegetable-text-color};
+	--grain-background-color: #{$grain-background-color};
+	--grain-text-color: #{$grain-text-color};
+	--nut-background-color: #{$nut-background-color};
+	--nut-text-color: #{$nut-text-color};
+	--spice-background-color: #{$spice-background-color};
+	--spice-text-color: #{$spice-text-color};
+	--vg-blend-background-color: #{$dark-vg-blend-color};
+	--vg-blend-text-color: #{$vg-blend-text-color};
 }
 body {
 	background-color: $lightish-secondary-color;
@@ -221,44 +244,40 @@ figcaption {
 	margin: 10px 3px;
 	padding: 10px;
 	> div:not(:first-child) {
-		margin-top: 15px;
+		margin-top: 3px;
+		padding: 12px;
 	}
 	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer:not(.spice)>.answer a:hover {
 		color: $black-hover-color;
 	}
 	
 	.answer {
-		font-size: 28px;
+		font-size: 18px;
+		font-style: italic;
 		margin-top: 5px;
 		margin-left: 10px;
 		a {
 			color: inherit;
+			// text-decoration: none;
 		}
 		.answer-parent {
 			font-size: 16px;
 		}
 	}
 }
-.nut .answer, .nut a {
-	color: $nut-color;
+@each $type in $types {
+	.#{$type} {
+		background-color: var(--#{$type}-background-color);
+	}
+	.#{$type}, .#{$type} a {
+		color: var(--#{$type}-text-color);
+	}
 }
-.spice .answer, .spice a, .spice a[href*="spice"] {
-	color: $spice-color;
+.vegetable.grain {
+	background-color: var(--vg-blend-background-color);
 }
-.fruit .answer, .fruit a, .fruit a[href*="fruit"] {
-	color: $primary-color;
-}
-.vegetable .answer, .vegetable a, .vegetable a[href*="vegetable"] {
-	color: $darkish-secondary-color;
-}
-.fruit.vegetable .answer, .vegetable.spice .answer {
-	color: unset !important;
-}
-.grain .answer, .grain a {
-	color: $dark-grain-color;
-}
-.vegetable.grain .answer, .vegetable.grain a {
-	color: $dark-vg-blend-color;
+.vegetable.grain, .vegetable.grain a {
+	color: var(--vg-blend-text-color);
 }
 .case {
 	font-size: initial;
@@ -309,15 +328,6 @@ footer {
 	}
 	blockquote {
 		background-color: $darkish-secondary-color;
-	}
-	.vegetable .answer, .vegetable a, .vegetable a[href*="vegetable"] {
-		color: $lightishish-secondary-color;
-	}
-	.grain .answer, .grain a {
-		color: $grain-color;
-	}
-	.vegetable.grain .answer, .vegetable.grain a {
-		color: $light-vg-blend-color;
 	}
 	.answer:hover {
 		color: #FFF;
