@@ -5,14 +5,8 @@ author:
   site: https://matthewminer.name
 url: https://fruitorvegetable.science
 sourceUrl: https://github.com/mminer237/fruitorvegetable
-tagManagerCode: GTM-5XJ2H43
 googleAdClient: ca-pub-5576042369154755
 themeColor: "#dc4d66"
-
-# googleFonts:
-#   - Lato:400,400i,900
-#   - Old+Standard+TT:400,400i,700
-#   - IBM+Plex+Serif:500,500i
 
 defaults:
   -
