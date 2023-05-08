@@ -2,6 +2,8 @@
 title: Pea
 botanically: seed
 culinarily: vegetable
+image: assets/images/peas.jpg
+image_caption: <a href="https://pixabay.com/photos/peas-vegetables-green-food-healthy-1205673/">Photo from Pixabay</a>
 water: 78.9
 calories: 81
 carbohydrates: 14.4
