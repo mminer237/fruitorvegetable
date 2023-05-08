@@ -10,5 +10,6 @@
 		"pitaya",
 		"vegetabliness",
 		"vegetably"
-	]
+	],
+	"python.analysis.typeCheckingMode": "basic"
 }
