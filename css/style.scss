@@ -244,7 +244,8 @@ figcaption {
 	margin: 10px 3px;
 	padding: 10px;
 	> div:not(:first-child) {
-		margin-top: 3px;
+		box-shadow: 0 2px 3px 0 rgba(0,0,0,0.28);
+		margin-top: 10px;
 		padding: 12px;
 	}
 	:not(.fruit):not(.vegetable):not(.grain):not(.nut)>.answer:not(.spice)>.answer a:hover {
@@ -278,6 +279,17 @@ figcaption {
 }
 .vegetable.grain, .vegetable.grain a {
 	color: var(--vg-blend-text-color);
+}
+.seed::before {
+	background-image: url(/assets/icons/seeds.svg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	content: "";
+	float: left;
+	height: 50px;
+	padding-right: 10px;
+	opacity: 0.9;
+	width: 50px;
 }
 .case {
 	font-size: initial;
@@ -331,6 +343,9 @@ footer {
 	}
 	.answer:hover {
 		color: #FFF;
+	}
+	.seed::before {
+		filter: unquote("invert()");
 	}
 	.see-also {
 		background-color: $darkish-secondary-color;
