@@ -280,8 +280,7 @@ figcaption {
 .vegetable.grain, .vegetable.grain a {
 	color: var(--vg-blend-text-color);
 }
-.seed::before {
-	background-image: url(/assets/icons/seeds.svg);
+.seed::before, .vegetable:not(.grain)::before {
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	content: "";
@@ -290,6 +289,13 @@ figcaption {
 	padding-right: 10px;
 	opacity: 0.9;
 	width: 50px;
+}
+.seed::before {
+	background-image: url(/assets/icons/seeds.svg);
+}
+.vegetable:not(.grain)::before {
+	background-image: url(/assets/icons/vegetables.svg);
+	filter: unquote("invert()");
 }
 .case {
 	font-size: initial;
