@@ -133,6 +133,9 @@ h2, summary, .question {
 	font-size: 24px;
 	font-weight: bold;
 }
+article > .question, p {
+	margin: 16px 0;
+}
 summary {
 	cursor: pointer;
 }

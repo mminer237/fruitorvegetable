@@ -47,7 +47,9 @@ item_question_title: true
 
 	{% assign legal_type = site.types | where:"type", page.legally | first %}
 	{% assign parent_legal_type = site.types | where:"type", legal_type.parent_type | first %}
+	{% if first_botanical_type or page.culinarily and culinary_type or legal_type %}
 	<div class="type">
+	{% endif %}
 		<div class="question">Is {% if page.article -%}
 			{{ page.article }}
 		{%- elsif page.article != false -%}
@@ -128,7 +130,9 @@ item_question_title: true
 			{% endif %}
 		</div>
 		{% endif %}
+	{% if first_botanical_type or page.culinarily and culinary_type or legal_type %}
 	</div>
+	{% endif %}
 	{{ page.content }}
 	{% if page.botanically == "fruit" or parent_botanical_type.type == "fruit" %}
 		{% assign is_fruit = true %}
