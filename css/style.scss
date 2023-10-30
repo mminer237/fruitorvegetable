@@ -283,7 +283,7 @@ figcaption {
 .vegetable.grain, .vegetable.grain a {
 	color: var(--vg-blend-text-color);
 }
-.seed::before, .vegetable:not(.grain)::before {
+.fruit::before, .seed::before, .vegetable:not(.grain)::before {
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	content: "";
@@ -292,6 +292,10 @@ figcaption {
 	padding-right: 10px;
 	opacity: 0.9;
 	width: 50px;
+}
+.fruit::before {
+	background-image: url(/assets/icons/fruits.svg);
+	filter: unquote("invert()");
 }
 .seed::before {
 	background-image: url(/assets/icons/seeds.svg);
