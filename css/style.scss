@@ -283,7 +283,10 @@ figcaption {
 .vegetable.grain, .vegetable.grain a {
 	color: var(--vg-blend-text-color);
 }
-.fruit::before, .seed::before, .vegetable:not(.grain)::before {
+.bacteria::before,
+.fruit::before,
+.seed::before,
+.vegetable:not(.grain)::before {
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	content: "";
@@ -292,6 +295,10 @@ figcaption {
 	padding-right: 10px;
 	opacity: 0.9;
 	width: 50px;
+}
+.bacteria::before {
+	background-image: url(/assets/icons/bacteria.svg);
+	filter: unquote("invert()");
 }
 .fruit::before {
 	background-image: url(/assets/icons/fruits.svg);
