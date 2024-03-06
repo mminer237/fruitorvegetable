@@ -298,7 +298,6 @@ figcaption {
 }
 .bacteria::before {
 	background-image: url(/assets/icons/bacteria.svg);
-	filter: unquote("invert()");
 }
 .fruit::before {
 	background-image: url(/assets/icons/fruits.svg);
@@ -363,6 +362,9 @@ footer {
 	}
 	.answer:hover {
 		color: #FFF;
+	}
+	.bacteria::before {
+		filter: unquote("invert()");
 	}
 	.seed::before {
 		filter: unquote("invert()");

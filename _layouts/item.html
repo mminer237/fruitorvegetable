@@ -11,10 +11,15 @@ item_question_title: true
 		{% if page.image_caption %}
 			<figure>
 		{% endif %}
+		{% assign image_start = page.image | slice: 0, 4 %}
+		{% if image_start == "http" %}
+		<img src="{{ page.image }}" alt="{{ page.title }}">
+		{% else %}
 {% responsive_image_block %}
   path: {{ page.image }}
   alt: {{ page.title }}
 {% endresponsive_image_block %}
+		{% endif %}
 		{% if page.image_caption %}
 		<figcaption>{{ page.image_caption }}</figcaption>
 			</figure>
